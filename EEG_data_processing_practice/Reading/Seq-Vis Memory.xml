@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:Sources xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography">
+  <b:Source>
+    <b:Tag>mammarella-cornoldi-2006-evidence-for-a-double-dissociation-between-spatial-simultaneous-and-spatial-sequential-working-memory-in-visuospatial-(nonverbal)-learning-disabled-children</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Evidence for a double dissociation between spatial-simultaneous and spatial-sequential working memory in visuospatial (nonverbal) learning disabled children</b:Title>
+    <b:Year>2006</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Irene C.</b:First>
+            <b:Last>Mammarella</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Cesare</b:First>
+            <b:Last>Cornoldi</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Francesca</b:First>
+            <b:Last>Pazzaglia</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Cristina</b:First>
+            <b:Last>Toso</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Mario</b:First>
+            <b:Last>Grimoldi</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Claudio</b:First>
+            <b:Last>Vio</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Brain and Cognition</b:JournalName>
+    <b:Pages>58-67</b:Pages>
+    <b:Volume>62</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:StandardNumber>10.1016/j.bandc.2006.03.007</b:StandardNumber>
+    <b:Month>10</b:Month>
+  </b:Source>
+  <b:Source>
+    <b:Tag>baddeley-hitch-1974-working-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Working Memory</b:Title>
+    <b:Year>1974</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Alan D.</b:First>
+            <b:Last>Baddeley</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Graham</b:First>
+            <b:Last>Hitch</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Psychology of Learning and Motivation</b:JournalName>
+    <b:Pages>47-89</b:Pages>
+    <b:Volume>8</b:Volume>
+    <b:StandardNumber>10.1016/S0079-7421(08)60452-1</b:StandardNumber>
+    <b:Publisher>Academic Press</b:Publisher>
+    <b:Month>1</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>gazzaniga-ivry-cognitive-neuroscience-:-the-biology-of-the-mind</b:Tag>
+    <b:SourceType>Book</b:SourceType>
+    <b:Title>Cognitive neuroscience : the biology of the mind</b:Title>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Michael S.</b:First>
+            <b:Last>Gazzaniga</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Richard B.</b:First>
+            <b:Last>Ivry</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>G. R. (George Ronald)</b:First>
+            <b:Last>Mangun</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:StandardNumber>9780393913484</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>burgess-hitch-1999-memory-for-serial-order:-a-network-model-of-the-phonological-loop-and-its-timing.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Memory for serial order: A network model of the phonological loop and its timing.</b:Title>
+    <b:Year>1999</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Neil</b:First>
+            <b:Last>Burgess</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Graham J.</b:First>
+            <b:Last>Hitch</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Psychological Review</b:JournalName>
+    <b:Pages>551-581</b:Pages>
+    <b:Volume>106</b:Volume>
+    <b:Issue>3</b:Issue>
+    <b:StandardNumber>10.1037/0033-295X.106.3.551</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>brown-preece-2000-oscillator-based-memory-for-serial-order.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Oscillator-based memory for serial order.</b:Title>
+    <b:Year>2000</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>G D</b:First>
+            <b:Last>Brown</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>T</b:First>
+            <b:Last>Preece</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>C</b:First>
+            <b:Last>Hulme</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Psychological review</b:JournalName>
+    <b:Pages>127-81</b:Pages>
+    <b:Volume>107</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:StandardNumber>0033-295X</b:StandardNumber>
+    <b:Month>1</b:Month>
+  </b:Source>
+  <b:Source>
+    <b:Tag>baddeley-allen-2010-is-the-hippocampus-necessary-for-visual-and-verbal-binding-in-working-memory?</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Is the hippocampus necessary for visual and verbal binding in working memory?</b:Title>
+    <b:Year>2010</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Alan</b:First>
+            <b:Last>Baddeley</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Richard</b:First>
+            <b:Last>Allen</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Faraneh</b:First>
+            <b:Last>Vargha-Khadem</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Neuropsychologia</b:JournalName>
+    <b:Pages>1089-1095</b:Pages>
+    <b:Volume>48</b:Volume>
+    <b:Issue>4</b:Issue>
+    <b:StandardNumber>10.1016/J.NEUROPSYCHOLOGIA.2009.12.009</b:StandardNumber>
+    <b:Publisher>Pergamon</b:Publisher>
+    <b:Month>3</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>lisman-jensen-2013-the-theta-gamma-neural-code</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>The Theta-Gamma Neural Code</b:Title>
+    <b:Year>2013</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>John E.</b:First>
+            <b:Last>Lisman</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Ole</b:First>
+            <b:Last>Jensen</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Neuron</b:JournalName>
+    <b:Pages>1002-1016</b:Pages>
+    <b:Volume>77</b:Volume>
+    <b:Issue>6</b:Issue>
+    <b:StandardNumber>10.1016/J.NEURON.2013.03.007</b:StandardNumber>
+    <b:Publisher>Cell Press</b:Publisher>
+    <b:Month>3</b:Month>
+    <b:Day>20</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>gaffan-murray-1992-monkeys-(macaca-fascicularis)-with-rhinal-cortex-ablations-succeed-in-object-discrimination-learning-despite-24-hr-intertrial-intervals-and-fail-at-matching-to-sample-despite-double-sample-presentations.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Monkeys (Macaca fascicularis) with rhinal cortex ablations succeed in object discrimination learning despite 24-hr intertrial intervals and fail at matching to sample despite double sample presentations.</b:Title>
+    <b:Year>1992</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>D</b:First>
+            <b:Last>Gaffan</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>E A</b:First>
+            <b:Last>Murray</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Behavioral neuroscience</b:JournalName>
+    <b:Pages>30-8</b:Pages>
+    <b:Volume>106</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:StandardNumber>0735-7044</b:StandardNumber>
+    <b:Month>2</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>carpenter-baud-bovy-2018-encoding-of-serial-order-in-working-memory:-neuronal-activity-in-motor,-premotor,-and-prefrontal-cortex-during-a-memory-scanning-task</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Encoding of Serial Order in Working Memory: Neuronal Activity in Motor, Premotor, and Prefrontal Cortex during a Memory Scanning Task</b:Title>
+    <b:Year>2018</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Adam F.</b:First>
+            <b:Last>Carpenter</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Gabriel</b:First>
+            <b:Last>Baud-Bovy</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Apostolos P.</b:First>
+            <b:Last>Georgopoulos</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Giuseppe</b:First>
+            <b:Last>Pellizzer</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Journal of Neuroscience</b:JournalName>
+    <b:Pages>4912-4933</b:Pages>
+    <b:Volume>38</b:Volume>
+    <b:Issue>21</b:Issue>
+    <b:StandardNumber>10.1523/JNEUROSCI.3294-17.2018</b:StandardNumber>
+    <b:Month>5</b:Month>
+    <b:Day>23</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>carpenter-georgopoulos-1999-motor-cortical-encoding-of-serial-order-in-a-context-recall-task.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Motor cortical encoding of serial order in a context-recall task.</b:Title>
+    <b:Year>1999</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>A F</b:First>
+            <b:Last>Carpenter</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>A P</b:First>
+            <b:Last>Georgopoulos</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>G</b:First>
+            <b:Last>Pellizzer</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Science</b:JournalName>
+    <b:Pages>1752-7</b:Pages>
+    <b:Volume>283</b:Volume>
+    <b:Issue>5408</b:Issue>
+    <b:StandardNumber>10.1126/SCIENCE.283.5408.1752</b:StandardNumber>
+    <b:Publisher>American Association for the Advancement of Science</b:Publisher>
+    <b:Month>3</b:Month>
+    <b:Day>12</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>siegel-warden-2009-phase-dependent-neuronal-coding-of-objects-in-short-term-memory.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Phase-dependent neuronal coding of objects in short-term memory.</b:Title>
+    <b:Year>2009</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Markus</b:First>
+            <b:Last>Siegel</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Melissa R</b:First>
+            <b:Last>Warden</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Earl K</b:First>
+            <b:Last>Miller</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Proceedings of the National Academy of Sciences of the United States of America</b:JournalName>
+    <b:Pages>21341-6</b:Pages>
+    <b:Volume>106</b:Volume>
+    <b:Issue>50</b:Issue>
+    <b:StandardNumber>10.1073/pnas.0908193106</b:StandardNumber>
+    <b:Publisher>National Academy of Sciences</b:Publisher>
+    <b:Month>12</b:Month>
+    <b:Day>15</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>petrides-1991-functional-specialization-within-the-dorsolateral-frontal-cortex-for-serial-order-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Functional specialization within the dorsolateral frontal cortex for serial order memory</b:Title>
+    <b:Year>1991</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Michael</b:First>
+            <b:Last>Petrides</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Proceedings of the Royal Society of London. Series B: Biological Sciences</b:JournalName>
+    <b:Pages>299-306</b:Pages>
+    <b:Volume>246</b:Volume>
+    <b:Issue>1317</b:Issue>
+    <b:StandardNumber>10.1098/rspb.1991.0158</b:StandardNumber>
+    <b:Month>12</b:Month>
+    <b:Day>23</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>baddeley-2003-working-memory:-looking-back-and-looking-forward</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Working memory: looking back and looking forward</b:Title>
+    <b:Year>2003</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Alan</b:First>
+            <b:Last>Baddeley</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Nature Reviews Neuroscience</b:JournalName>
+    <b:Pages>829-839</b:Pages>
+    <b:Volume>4</b:Volume>
+    <b:Issue>10</b:Issue>
+    <b:StandardNumber>10.1038/nrn1201</b:StandardNumber>
+    <b:Publisher>Nature Publishing Group</b:Publisher>
+    <b:Month>10</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>heusser-poeppel-2016-episodic-sequence-memory-is-supported-by-a-theta–gamma-phase-code</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Episodic sequence memory is supported by a theta–gamma phase code</b:Title>
+    <b:Year>2016</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Andrew C</b:First>
+            <b:Last>Heusser</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>David</b:First>
+            <b:Last>Poeppel</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Youssef</b:First>
+            <b:Last>Ezzyat</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Lila</b:First>
+            <b:Last>Davachi</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Nature Neuroscience</b:JournalName>
+    <b:Pages>1374-1380</b:Pages>
+    <b:Volume>19</b:Volume>
+    <b:Issue>10</b:Issue>
+    <b:StandardNumber>10.1038/nn.4374</b:StandardNumber>
+    <b:Publisher>Nature Publishing Group</b:Publisher>
+    <b:Month>10</b:Month>
+    <b:Day>29</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>axmacher-henseler-2010-cross-frequency-coupling-supports-multi-item-working-memory-in-the-human-hippocampus.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Cross-frequency coupling supports multi-item working memory in the human hippocampus.</b:Title>
+    <b:Year>2010</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Nikolai</b:First>
+            <b:Last>Axmacher</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Melanie M</b:First>
+            <b:Last>Henseler</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Ole</b:First>
+            <b:Last>Jensen</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Ilona</b:First>
+            <b:Last>Weinreich</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Christian E</b:First>
+            <b:Last>Elger</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Juergen</b:First>
+            <b:Last>Fell</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Proceedings of the National Academy of Sciences of the United States of America</b:JournalName>
+    <b:Pages>3228-33</b:Pages>
+    <b:Volume>107</b:Volume>
+    <b:Issue>7</b:Issue>
+    <b:StandardNumber>10.1073/pnas.0911531107</b:StandardNumber>
+    <b:Publisher>National Academy of Sciences</b:Publisher>
+    <b:Month>2</b:Month>
+    <b:Day>16</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>lisman-idiart-1995-storage-of-7-+/--2-short-term-memories-in-oscillatory-subcycles.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Storage of 7 +/- 2 short-term memories in oscillatory subcycles.</b:Title>
+    <b:Year>1995</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>J E</b:First>
+            <b:Last>Lisman</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>M A</b:First>
+            <b:Last>Idiart</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Science</b:JournalName>
+    <b:Pages>1512-5</b:Pages>
+    <b:Volume>267</b:Volume>
+    <b:Issue>5203</b:Issue>
+    <b:StandardNumber>10.1126/SCIENCE.7878473</b:StandardNumber>
+    <b:Publisher>American Association for the Advancement of Science</b:Publisher>
+    <b:Month>3</b:Month>
+    <b:Day>10</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>roux-uhlhaas-2014-working-memory-and-neural-oscillations:-alpha–gamma-versus-theta–gamma-codes-for-distinct-wm-information?</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Working memory and neural oscillations: alpha–gamma versus theta–gamma codes for distinct WM information?</b:Title>
+    <b:Year>2014</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Frédéric</b:First>
+            <b:Last>Roux</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Peter J.</b:First>
+            <b:Last>Uhlhaas</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Trends in Cognitive Sciences</b:JournalName>
+    <b:Pages>16-25</b:Pages>
+    <b:Volume>18</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:StandardNumber>10.1016/J.TICS.2013.10.010</b:StandardNumber>
+    <b:Publisher>Elsevier Current Trends</b:Publisher>
+    <b:Month>1</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>lee-simpson-2005-phase-locking-of-single-neuron-activity-to-theta-oscillations-during-working-memory-in-monkey-extrastriate-visual-cortex</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Phase Locking of Single Neuron Activity to Theta Oscillations during Working Memory in Monkey Extrastriate Visual Cortex</b:Title>
+    <b:Year>2005</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Han</b:First>
+            <b:Last>Lee</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Gregory V.</b:First>
+            <b:Last>Simpson</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Nikos K.</b:First>
+            <b:Last>Logothetis</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Gregor</b:First>
+            <b:Last>Rainer</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Neuron</b:JournalName>
+    <b:Pages>147-156</b:Pages>
+    <b:Volume>45</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:StandardNumber>10.1016/J.NEURON.2004.12.025</b:StandardNumber>
+    <b:Publisher>Cell Press</b:Publisher>
+    <b:Month>1</b:Month>
+    <b:Day>6</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>hsieh-ekstrom-2011-neural-oscillations-associated-with-item-and-temporal-order-maintenance-in-working-memory.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Neural oscillations associated with item and temporal order maintenance in working memory.</b:Title>
+    <b:Year>2011</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Liang-Tien</b:First>
+            <b:Last>Hsieh</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Arne D</b:First>
+            <b:Last>Ekstrom</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Charan</b:First>
+            <b:Last>Ranganath</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Journal of Neuroscience</b:JournalName>
+    <b:Pages>10803-10</b:Pages>
+    <b:Volume>31</b:Volume>
+    <b:Issue>30</b:Issue>
+    <b:StandardNumber>10.1523/JNEUROSCI.0828-11.2011</b:StandardNumber>
+    <b:Publisher>Society for Neuroscience</b:Publisher>
+    <b:Month>7</b:Month>
+    <b:Day>27</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>jensen-tesche-2002-frontal-theta-activity-in-humans-increases-with-memory-load-in-a-working-memory-task</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Frontal theta activity in humans increases with memory load in a working memory task</b:Title>
+    <b:Year>2002</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Ole</b:First>
+            <b:Last>Jensen</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Claudia D.</b:First>
+            <b:Last>Tesche</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>European Journal of Neuroscience</b:JournalName>
+    <b:Pages>1395-1399</b:Pages>
+    <b:Volume>15</b:Volume>
+    <b:Issue>8</b:Issue>
+    <b:StandardNumber>10.1046/j.1460-9568.2002.01975.x</b:StandardNumber>
+    <b:Publisher>John Wiley &amp; Sons, Ltd (10.1111)</b:Publisher>
+    <b:Month>4</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>howard-rizzuto-2003-gamma-oscillations-correlate-with-working-memory-load-in-humans</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Gamma Oscillations Correlate with Working Memory Load in Humans</b:Title>
+    <b:Year>2003</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>M. W.</b:First>
+            <b:Last>Howard</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Daniel S.</b:First>
+            <b:Last>Rizzuto</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Jeremy B.</b:First>
+            <b:Last>Caplan</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Joseph R.</b:First>
+            <b:Last>Madsen</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>John</b:First>
+            <b:Last>Lisman</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Richard</b:First>
+            <b:Last>Aschenbrenner-Scheibe</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Andreas</b:First>
+            <b:Last>Schulze-Bonhage</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Michael J.</b:First>
+            <b:Last>Kahana</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Cerebral Cortex</b:JournalName>
+    <b:Pages>1369-1374</b:Pages>
+    <b:Volume>13</b:Volume>
+    <b:Issue>12</b:Issue>
+    <b:StandardNumber>10.1093/cercor/bhg084</b:StandardNumber>
+    <b:Publisher>Narnia</b:Publisher>
+    <b:Month>12</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>lutzenberger-ripper-2002-dynamics-of-gamma-band-activity-during-an-audiospatial-working-memory-task-in-humans.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Dynamics of gamma-band activity during an audiospatial working memory task in humans.</b:Title>
+    <b:Year>2002</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Werner</b:First>
+            <b:Last>Lutzenberger</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Barbara</b:First>
+            <b:Last>Ripper</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Laura</b:First>
+            <b:Last>Busse</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Niels</b:First>
+            <b:Last>Birbaumer</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Jochen</b:First>
+            <b:Last>Kaiser</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Journal of Neuroscience</b:JournalName>
+    <b:Pages>5630-8</b:Pages>
+    <b:Volume>22</b:Volume>
+    <b:Issue>13</b:Issue>
+    <b:StandardNumber>20026570</b:StandardNumber>
+    <b:Publisher>Society for Neuroscience</b:Publisher>
+    <b:Month>7</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>singer-gray-1995-visual-feature-integration-and-the-temporal-correlation-hypothesis</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Visual Feature Integration and the Temporal Correlation Hypothesis</b:Title>
+    <b:Year>1995</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>W</b:First>
+            <b:Last>Singer</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>C M</b:First>
+            <b:Last>Gray</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Annual Review of Neuroscience</b:JournalName>
+    <b:Pages>555-586</b:Pages>
+    <b:Volume>18</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:StandardNumber>10.1146/annurev.ne.18.030195.003011</b:StandardNumber>
+    <b:Publisher> Annual Reviews  4139 El Camino Way, P.O. Box 10139, Palo Alto, CA 94303-0139, USA  </b:Publisher>
+    <b:Month>3</b:Month>
+    <b:Day>28</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>fell-axmacher-2011-the-role-of-phase-synchronization-in-memory-processes</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>The role of phase synchronization in memory processes</b:Title>
+    <b:Year>2011</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Juergen</b:First>
+            <b:Last>Fell</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Nikolai</b:First>
+            <b:Last>Axmacher</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Nature Reviews Neuroscience</b:JournalName>
+    <b:Pages>105-118</b:Pages>
+    <b:Volume>12</b:Volume>
+    <b:Issue>2</b:Issue>
+    <b:StandardNumber>10.1038/nrn2979</b:StandardNumber>
+    <b:Publisher>Nature Publishing Group</b:Publisher>
+    <b:Month>2</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>tallon-baudry-bertrand-1998-induced-gamma-band-activity-during-the-delay-of-a-visual-short-term-memory-task-in-humans.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Induced gamma-band activity during the delay of a visual short-term memory task in humans.</b:Title>
+    <b:Year>1998</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>C</b:First>
+            <b:Last>Tallon-Baudry</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>O</b:First>
+            <b:Last>Bertrand</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>F</b:First>
+            <b:Last>Peronnet</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>J</b:First>
+            <b:Last>Pernier</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Journal of Neuroscience</b:JournalName>
+    <b:Pages>4244-54</b:Pages>
+    <b:Volume>18</b:Volume>
+    <b:Issue>11</b:Issue>
+    <b:StandardNumber>10.1523/JNEUROSCI.18-11-04244.1998</b:StandardNumber>
+    <b:Publisher>Society for Neuroscience</b:Publisher>
+    <b:Month>6</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>owen-mcmillan-2005-n-back-working-memory-paradigm:-a-meta-analysis-of-normative-functional-neuroimaging-studies</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>N-back working memory paradigm: A meta-analysis of normative functional neuroimaging studies</b:Title>
+    <b:Year>2005</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Adrian M.</b:First>
+            <b:Last>Owen</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Kathryn M.</b:First>
+            <b:Last>McMillan</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Angela R.</b:First>
+            <b:Last>Laird</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Ed</b:First>
+            <b:Last>Bullmore</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Human Brain Mapping</b:JournalName>
+    <b:Pages>46-59</b:Pages>
+    <b:Volume>25</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:StandardNumber>10.1002/hbm.20131</b:StandardNumber>
+    <b:Month>5</b:Month>
+  </b:Source>
+  <b:Source>
+    <b:Tag>wager-smith-2003-neuroimaging-studies-of-working-memory:-a-meta-analysis.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Neuroimaging studies of working memory: a meta-analysis.</b:Title>
+    <b:Year>2003</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Tor D</b:First>
+            <b:Last>Wager</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Edward E</b:First>
+            <b:Last>Smith</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Cognitive, affective &amp; behavioral neuroscience</b:JournalName>
+    <b:Pages>255-74</b:Pages>
+    <b:Volume>3</b:Volume>
+    <b:Issue>4</b:Issue>
+    <b:StandardNumber>1530-7026</b:StandardNumber>
+    <b:Month>12</b:Month>
+  </b:Source>
+  <b:Source>
+    <b:Tag>kirchner-1958-age-differences-in-short-term-retention-of-rapidly-changing-information.</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Age differences in short-term retention of rapidly changing information.</b:Title>
+    <b:Year>1958</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Wayne K.</b:First>
+            <b:Last>Kirchner</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Journal of Experimental Psychology</b:JournalName>
+    <b:Pages>352-358</b:Pages>
+    <b:Volume>55</b:Volume>
+    <b:Issue>4</b:Issue>
+    <b:StandardNumber>10.1037/h0043688</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>sternberg-1967-retrieval-of-contextual-information-from-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Retrieval of contextual information from memory</b:Title>
+    <b:Year>1967</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Saul</b:First>
+            <b:Last>Sternberg</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Psychonomic Science</b:JournalName>
+    <b:Pages>55-56</b:Pages>
+    <b:Volume>8</b:Volume>
+    <b:Issue>2</b:Issue>
+    <b:StandardNumber>10.3758/BF03330664</b:StandardNumber>
+    <b:Publisher>Springer-Verlag</b:Publisher>
+    <b:Month>2</b:Month>
+    <b:Day>4</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>jensen-lisman-2005-hippocampal-sequence-encoding-driven-by-a-cortical-multi-item-working-memory-buffer</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Hippocampal sequence-encoding driven by a cortical multi-item working memory buffer</b:Title>
+    <b:Year>2005</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Ole</b:First>
+            <b:Last>Jensen</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>John E.</b:First>
+            <b:Last>Lisman</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Trends in Neurosciences</b:JournalName>
+    <b:Pages>67-72</b:Pages>
+    <b:Volume>28</b:Volume>
+    <b:Issue>2</b:Issue>
+    <b:StandardNumber>10.1016/j.tins.2004.12.001</b:StandardNumber>
+    <b:Month>2</b:Month>
+  </b:Source>
+  <b:Source>
+    <b:Tag>sternberg-1966-high-speed-scanning-in-human-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>High-Speed Scanning in Human Memory</b:Title>
+    <b:Year>1966</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>S.</b:First>
+            <b:Last>Sternberg</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Science</b:JournalName>
+    <b:Pages>652-654</b:Pages>
+    <b:Volume>153</b:Volume>
+    <b:Issue>3736</b:Issue>
+    <b:StandardNumber>10.1126/science.153.3736.652</b:StandardNumber>
+    <b:Month>8</b:Month>
+    <b:Day>5</b:Day>
+  </b:Source>
+</b:Sources>
