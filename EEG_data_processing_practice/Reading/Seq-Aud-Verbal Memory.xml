@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:Sources xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography">
+  <b:Source>
+    <b:Tag>bonnefond-jensen-2012-alpha-oscillations-serve-to-protect-working-memory-maintenance-against-anticipated-distracters</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Alpha oscillations serve to protect working memory maintenance against anticipated distracters</b:Title>
+    <b:Year>2012</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Mathilde</b:First>
+            <b:Last>Bonnefond</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Ole</b:First>
+            <b:Last>Jensen</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Current Biology</b:JournalName>
+    <b:StandardNumber>10.1016/j.cub.2012.08.029</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>lim-wostmann-2015-selective-attention-to-auditory-memory-neurally-enhances-perceptual-precision</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Selective Attention to Auditory Memory Neurally Enhances Perceptual Precision</b:Title>
+    <b:Year>2015</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>S.-J.</b:First>
+            <b:Last>Lim</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>M.</b:First>
+            <b:Last>Wostmann</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>J.</b:First>
+            <b:Last>Obleser</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Journal of Neuroscience</b:JournalName>
+    <b:StandardNumber>10.1523/jneurosci.2674-15.2015</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>albouy-weiss-2017-selective-entrainment-of-theta-oscillations-in-the-dorsal-stream-causally-enhances-auditory-working-memory-performance</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Selective Entrainment of Theta Oscillations in the Dorsal Stream Causally Enhances Auditory Working Memory Performance</b:Title>
+    <b:Year>2017</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Philippe</b:First>
+            <b:Last>Albouy</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Aurélien</b:First>
+            <b:Last>Weiss</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Sylvain</b:First>
+            <b:Last>Baillet</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Robert J.</b:First>
+            <b:Last>Zatorre</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Neuron</b:JournalName>
+    <b:StandardNumber>10.1016/j.neuron.2017.03.015</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>aru-aru-2015-untangling-cross-frequency-coupling-in-neuroscience</b:Tag>
+    <b:SourceType>Misc</b:SourceType>
+    <b:Title>Untangling cross-frequency coupling in neuroscience</b:Title>
+    <b:Year>2015</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Juhan</b:First>
+            <b:Last>Aru</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Jaan</b:First>
+            <b:Last>Aru</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Viola</b:First>
+            <b:Last>Priesemann</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Michael</b:First>
+            <b:Last>Wibral</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Luiz</b:First>
+            <b:Last>Lana</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Gordon</b:First>
+            <b:Last>Pipa</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Wolf</b:First>
+            <b:Last>Singer</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Raul</b:First>
+            <b:Last>Vicente</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:PublicationTitle>Current Opinion in Neurobiology</b:PublicationTitle>
+    <b:Pages>51-61</b:Pages>
+    <b:Volume>31</b:Volume>
+    <b:StandardNumber>10.1016/j.conb.2014.08.002</b:StandardNumber>
+    <b:Publisher>Elsevier Ltd</b:Publisher>
+    <b:Month>4</b:Month>
+    <b:Day>1</b:Day>
+  </b:Source>
+  <b:Source>
+    <b:Tag>leiberg-lutzenberger-2006-effects-of-memory-load-on-cortical-oscillatory-activity-during-auditory-pattern-working-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Effects of memory load on cortical oscillatory activity during auditory pattern working memory</b:Title>
+    <b:Year>2006</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Susanne</b:First>
+            <b:Last>Leiberg</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Werner</b:First>
+            <b:Last>Lutzenberger</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Jochen</b:First>
+            <b:Last>Kaiser</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Brain Research</b:JournalName>
+    <b:StandardNumber>10.1016/j.brainres.2006.08.066</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>hue-erickson-1988-short-term-memory-for-chinese-characters-and-radicals</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Short-term memory for Chinese characters and radicals</b:Title>
+    <b:Year>1988</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Chih Wei</b:First>
+            <b:Last>Hue</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>James R.</b:First>
+            <b:Last>Erickson</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Memory &amp; Cognition</b:JournalName>
+    <b:StandardNumber>10.3758/BF03197752</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>scheeringa-petersson-2009-trial-by-trial-coupling-between-eeg-and-bold-identifies-networks-related-to-alpha-and-theta-eeg-power-increases-during-working-memory-maintenance</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Trial-by-trial coupling between EEG and BOLD identifies networks related to alpha and theta EEG power increases during working memory maintenance</b:Title>
+    <b:Year>2009</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>René</b:First>
+            <b:Last>Scheeringa</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Karl Magnus</b:First>
+            <b:Last>Petersson</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Robert</b:First>
+            <b:Last>Oostenveld</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>David G.</b:First>
+            <b:Last>Norris</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Peter</b:First>
+            <b:Last>Hagoort</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>M. C M</b:First>
+            <b:Last>Bastiaansen</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>NeuroImage</b:JournalName>
+    <b:StandardNumber>10.1016/j.neuroimage.2008.08.041</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>serruya-sederberg-2014-power-shifts-track-serial-position-and-modulate-encoding-in-human-episodic-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Power shifts track serial position and modulate encoding in human episodic memory</b:Title>
+    <b:Year>2014</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Mijail D.</b:First>
+            <b:Last>Serruya</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Per B.</b:First>
+            <b:Last>Sederberg</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Michael J.</b:First>
+            <b:Last>Kahana</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Cerebral Cortex</b:JournalName>
+    <b:StandardNumber>10.1093/cercor/bhs318</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>azizian-polich-2007-evidence-for-attentional-gradient-in-the-serial-position-memory-curve-from-event-related-potentials</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Evidence for attentional gradient in the serial position memory curve from event-related potentials</b:Title>
+    <b:Year>2007</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Allen</b:First>
+            <b:Last>Azizian</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>John</b:First>
+            <b:Last>Polich</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Journal of Cognitive Neuroscience</b:JournalName>
+    <b:StandardNumber>10.1162/jocn.2007.19.12.2071</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>proskovec-heinrichs-graham-2019-load-modulates-the-alpha-and-beta-oscillatory-dynamics-serving-verbal-working-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Load modulates the alpha and beta oscillatory dynamics serving verbal working memory</b:Title>
+    <b:Year>2019</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Amy L.</b:First>
+            <b:Last>Proskovec</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Elizabeth</b:First>
+            <b:Last>Heinrichs-Graham</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Tony W.</b:First>
+            <b:Last>Wilson</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>NeuroImage</b:JournalName>
+    <b:StandardNumber>10.1016/j.neuroimage.2018.09.022</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>crottaz-herbette-anagnoson-2004-modality-effects-in-verbal-working-memory:-differential-prefrontal-and-parietal-responses-to-auditory-and-visual-stimuli</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Modality effects in verbal working memory: Differential prefrontal and parietal responses to auditory and visual stimuli</b:Title>
+    <b:Year>2004</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>S.</b:First>
+            <b:Last>Crottaz-Herbette</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>R. T.</b:First>
+            <b:Last>Anagnoson</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>V.</b:First>
+            <b:Last>Menon</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>NeuroImage</b:JournalName>
+    <b:Pages>340-351</b:Pages>
+    <b:Volume>21</b:Volume>
+    <b:Issue>1</b:Issue>
+    <b:StandardNumber>10.1016/j.neuroimage.2003.09.019</b:StandardNumber>
+    <b:Publisher>Academic Press Inc.</b:Publisher>
+  </b:Source>
+  <b:Source>
+    <b:Tag>saults-cowan-2007-a-central-capacity-limit-to-the-simultaneous-storage-of-visual-and-auditory-arrays-in-working-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>A Central Capacity Limit to the Simultaneous Storage of Visual and Auditory Arrays in Working Memory</b:Title>
+    <b:Year>2007</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>J. Scott</b:First>
+            <b:Last>Saults</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Nelson</b:First>
+            <b:Last>Cowan</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>Journal of Experimental Psychology: General</b:JournalName>
+    <b:Pages>663-684</b:Pages>
+    <b:Volume>136</b:Volume>
+    <b:Issue>4</b:Issue>
+    <b:StandardNumber>10.1037/0096-3445.136.4.663</b:StandardNumber>
+    <b:Month>11</b:Month>
+  </b:Source>
+  <b:Source>
+    <b:Tag>kaiser-2015-dynamics-of-auditory-working-memory</b:Tag>
+    <b:SourceType>Misc</b:SourceType>
+    <b:Title>Dynamics of auditory working memory</b:Title>
+    <b:Year>2015</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Jochen</b:First>
+            <b:Last>Kaiser</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:PublicationTitle>Frontiers in Psychology</b:PublicationTitle>
+    <b:StandardNumber>10.3389/fpsyg.2015.00613</b:StandardNumber>
+  </b:Source>
+  <b:Source>
+    <b:Tag>sussman-gumenyuk-2005-organization-of-sequential-sounds-in-auditory-memory</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Title>Organization of sequential sounds in auditory memory</b:Title>
+    <b:Year>2005</b:Year>
+    <b:RefOrder>1</b:RefOrder>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:First>Elyse S.</b:First>
+            <b:Last>Sussman</b:Last>
+          </b:Person>
+          <b:Person>
+            <b:First>Valentina</b:First>
+            <b:Last>Gumenyuk</b:Last>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:JournalName>NeuroReport</b:JournalName>
+    <b:Pages>1519-1523</b:Pages>
+    <b:Volume>16</b:Volume>
+    <b:Issue>13</b:Issue>
+    <b:StandardNumber>10.1097/01.wnr.0000177002.35193.4c</b:StandardNumber>
+    <b:Month>9</b:Month>
+    <b:Day>8</b:Day>
+  </b:Source>
+</b:Sources>
