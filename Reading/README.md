@@ -6,7 +6,7 @@
 
 ## Papers
 For sequential visual working memory: see **Seq-Vis Memory.xml**
-- The references in my review of the representation of time and order in visual working memory. See **工作记忆中的时序表征.pdf**
+- The references in my review of the representation of time and order in visual working memory. See **时序信息在工作记忆中的表征.pdf**
 
 For auditory-verbal working memory: see **Seq-Aud-Verbal Memory.xml**
 - The basis and inspiration of my experiment about temporal organization in auditory-verbal working memory.
