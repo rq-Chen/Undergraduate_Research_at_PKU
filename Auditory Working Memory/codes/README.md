@@ -11,3 +11,5 @@ For the right room
   - if you want to debug, change PORTNUM in AudioPlayForTest.m to 49408 too (before other operations)
 
 If you want to debug, you can change the filename of AudioPlay.m, then change the filename of AudioPlayForTest.m to AudioPlay.m, and change them back after debugging. (of course you can save a copy of the original AudioPlay.m and change the trial numbers, too)
+
+Copy the sti***.mat files to the same directory before running these scripts.
