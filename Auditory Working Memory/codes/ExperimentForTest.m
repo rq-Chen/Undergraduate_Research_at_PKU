@@ -259,6 +259,7 @@ try
             while ~(keyCode(keyspace))
                 [~, ~,keyCode] = KbCheck;
             end
+            sca; PsychPortAudio('Close'); return;
         end
         
         
@@ -280,7 +281,7 @@ try
         DrawFormattedText(w, '+', 'Center', 'Center', WHITE);
         Screen('Flip', w);
         
-        AudioPlay(1 , condition);
+        AudioPlayForTest(1 , condition);
         
         %--------------------正式------------------%
         %指导语
@@ -319,7 +320,7 @@ try
         
         
         %播放声音，收集按键
-        [ResponseType(countblock , :) , RT(countblock , :)] = AudioPlay(0 , condition , TrialType(countblock , :));
+        [ResponseType(countblock , :) , RT(countblock , :)] = AudioPlayForTest(0 , condition , TrialType(countblock , :));
         %
         
         %---------------------结果处理-------------------%

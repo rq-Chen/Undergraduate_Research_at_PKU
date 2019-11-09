@@ -7,6 +7,7 @@
 %parameters preparation
 
 isEnglish         = 0;  %1: English verion of introduction; 0: Chinese one
+WINID = 2;
 
 %--------------color--------------%
 BLACK             = [0 0 0];
@@ -23,7 +24,7 @@ try
     InitializePsychSound; %初始化PsychSound
     KbName('UnifyKeyNames');%键盘准备
     Screen('Preference', 'SkipSyncTests',1);%跳过硬件检测
-    [w,dect]=Screen('OpenWindow',1,bgcolor);%打开一个窗口，全屏，返回句柄w和窗口向量rec
+    [w,dect]=Screen('OpenWindow',WINID,bgcolor);%打开一个窗口，全屏，返回句柄w和窗口向量rec
     cx=dect(3)/2;%获得中心点横坐标
     cy=dect(4)/2;%获得中心点纵坐标
     %ListenChar(2);
@@ -117,7 +118,7 @@ else
         PROMPTS{1, 1, 6} = '然后下一个试次将很快开始 ';
         PROMPTS{1, 1, 7} = '在整个试次中，请用眼睛看着屏幕上的注视点 ';
         PROMPTS{1, 1, 8} = '并尽量避免眨眼或者头动.按键之后可以眨眼     ';
-        PROMPTS{1, 1, 9} = '如果准备好了，请按下空格键；如果想要退出，请按下esc键';
+        PROMPTS{1, 1, 9} = '如果准备好了，请按下空格键；如果有疑问,请向主试示意';
     
         PROMPTS{1, 2, 1} = '倒放任务     每一个试次中，你会听到由3个声音组成的序列 ';
         PROMPTS{1, 2, 2} = '请将声音记在心中，并在2s之内将其倒序转换 ';
@@ -127,7 +128,7 @@ else
         PROMPTS{1, 2, 6} = '声音播放完后，你有2s的时间进行按键反应 ''然后下一个试次将很快开始 ';
         PROMPTS{1, 2, 7} = '在整个试次中，请用眼睛看着屏幕上的注视点 ';
         PROMPTS{1, 2, 8} = '并尽量避免眨眼或者头动.按键之后可以眨眼';
-        PROMPTS{1, 2, 9} = '如果准备好了，请按下空格键；如果想要退出，请按下esc键';
+        PROMPTS{1, 2, 9} = '如果准备好了，请按下空格键；如果有疑问,请向主试示意';
     
         PROMPTS{1, 3, 1} = '升调任务    每一个试次中，你会听到由3个声音组成的序列 ';
         PROMPTS{1, 3, 2} = '请将声音记在心中，并在2s之内将其声调在心中升高一个八度 ';
@@ -137,7 +138,7 @@ else
         PROMPTS{1, 3, 6} = '声音播放完后，你有2s的时间进行按键反应, 然后下一个试次将很快开始 ';
         PROMPTS{1, 3, 7} = '在整个试次中，请用眼睛看着屏幕上的注视点  ';
         PROMPTS{1, 3, 8} = '并尽量避免眨眼或者头动.按键之后可以眨眼     ';
-        PROMPTS{1, 3, 9} = '如果准备好了，请按下空格键；如果想要退出，请按下esc键';
+        PROMPTS{1, 3, 9} = '如果准备好了，请按下空格键；如果有疑问,请向主试示意';
 
     
         PROMPTS{1, 4, 1} = '走向任务    每一个试次中，你会听到由3个声音组成的序列 ';
@@ -148,7 +149,7 @@ else
         PROMPTS{1, 4, 6} = '声音播放完后，你有2s的时间进行按键反应, 然后下一个试次将很快开始';
         PROMPTS{1, 4, 7} = '在整个试次中，请用眼睛看着屏幕上的注视点 ';
         PROMPTS{1, 4, 8} = '并尽量避免眨眼或者头动。按键之后可以眨眼';
-        PROMPTS{1, 4, 9} = '如果准备好了，请按下空格键；如果想要退出，请按下esc键.';
+        PROMPTS{1, 4, 9} = '如果准备好了，请按下空格键；如果有疑问,请向主试示意.';
 
     
     PROMPTS{1, 5} = '练习阶段';
@@ -180,7 +181,7 @@ else
         Screen('Flip', w);
         %收集按键
         [~, ~,keyCode] = KbCheck;
-        while ~(keyCode(keyend) || keyCode(keyspace))
+        while ~(keyCode(keyspace))
             [~, ~,keyCode] = KbCheck;
         end
         if keyCode(keyend)

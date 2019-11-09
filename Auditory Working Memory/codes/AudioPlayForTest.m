@@ -1,8 +1,7 @@
 %% AudioPlayForTest.m - only for debugging (fewer trials)
 %
-% When you want to debug, change the filename to AudioPlay and change the
-% original AudioPlay to some other name.
-function[reaction , RT] = AudioPlay(isPractice , blocktype , trialtype  )
+% Debugging only
+function[reaction , RT] = AudioPlayForTest(isPractice , blocktype , trialtype  )
 
 %New!本函数实现功能：完成一个block的播放声音，并传回被试的反应（按键序号即可）
 %ispractice  2: main practice; 1：practice; 0：main experiment
