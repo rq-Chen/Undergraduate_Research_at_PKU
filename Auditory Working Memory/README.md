@@ -67,7 +67,82 @@
 
 
 
-## EEG Preprocessing
+## Data Preprocessing
+
+### Pipeline
+
+- Use EEGLAB default parameters, unless stated otherwise.
+
+- **DON'T CHANGE THE ORDER OF THE FOLLOWING PROCESSES.**
+
+
+
+#### Section 1
+
+0. new a folder for each subject entitled "name+number", e.g `crq1`, and copy the .mat file of this subject generated in the experiment to this folder, then load the data into EEGLAB and select channel location (select the second option "Use MNI...")
+1. re-reference to average mastoids (TP9 & TP10)
+2. 50Hz notch filter, then filter between 0.3 ~ 50 Hz
+3. run ICA
+4. save the EEGLAB dataset as "name+number+ICA.set", e.g. `crq1ICA.set`
+
+This section can be done automatically using scripts (recommended, since that enables you to run ICA on all subjects over a night, and more importantly prevents mistakes).
+
+
+
+#### Section 2
+
+5. ICA ocular artifact removal, save the rejected component's landscape and activation profile (shown by EEGLAB) as `cmpRej.fig`
+
+   <img src = "cmpRejExample.jpg" style = "zoom:30%"/>
+
+6. epoch, -1000 ~ 4000ms locked to S1 onset (**no baseline correction**)
+
+7. save the dataset as "name+number+Epoch.set", e.g. `crq1Epoch.set`
+
+8. visual inspection, reject epochs
+
+9. bad channel (marked during the experiment or by EEGLAB automatic channel rejection) rejection, save the rejected channels' name in `chnRej.txt`
+
+10. interpolate the rejected channels
+
+11. save the dataset as "name+number.set", e.g. `crq1.set`
+
+This section needs to be done manually.
+
+
+
+#### Section 3
+
+12. seperate the dataset according to the condition and reaction type
+
+Probably only feasible through scripts, see the chapter below.
+
+
+
+### Data Categorization
+
+#### Input
+
+- 在当前目录下，有很多文件夹，命名为“姓名小写缩写+编号”，如：crq1, lyq16
+- 每个文件夹里有EEGLAB预处理处理好的数据，命名为“姓名小写缩写+编号.fdt\set”，如：crq1.fdt, lyq16.set
+- 每个文件夹里还包括实验时生成的试次和反应的信息，命名为“姓名小写缩写+编号.mat”，如：lyq16.mat
+
+#### Output
+
+- 在每个被试的文件夹下生成八个mat文件，分别存储了四个条件的正确/错误试次的脑电数据，命名为“姓名小写缩写+编号+条件+反应类型.mat”，其中条件为Simple\Reversed\Transposition\Contour，反应类型为T\F，如：crq1ContourF.mat
+- 文件内容：变量eegdata（nChannels * nTimepoints * nTrials single），脑电数据
+
+#### Method
+
+- 使用`load("xxxxx.set", "-mat")`读入一个结构体`EEG`，在EEG.event.bvmknum中记录了这个数据集中所有事件的编号（范围从2到433）
+- 打开eeglab并load dataset后，`EEG.data`存储了脑电数据（nChannels * nTimepoints * nTrials single）
+- load dataset可以用eeglab自动生成的代码实现（手工操作一次后自动生成）
+
+
+
+## Data Processing Pipeline in the Original Paper
+
+### EEG Preprocessing
 
 - re-reference to average mastoids (TP9 & TP10, rather than the original nose reference)
 - artifact rejection by EEGLAB (e.g., dead channels, channel jumps, etc.)
@@ -78,9 +153,7 @@
 - visual inspection for epoch rejection
 - automatic trial rejection (range of values within a trial at any electrodes > 200uV)
 
-
-
-## Event-Related Response Analysis
+### Event-Related Response Analysis
 
 - averaged seperately for SIMPLE, REVERSED correct, REVERSED incorrect and so on, with equal number of trials (random selected)
 - 100ms (before onset of S1) baseline correction
