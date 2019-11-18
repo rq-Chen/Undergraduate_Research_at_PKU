@@ -4,7 +4,9 @@
 - EEG_data_processing_practice: My very first experience with cognitive neuroscience research.
 - Reading: Some books and articles I've read through the process (not frequently updated).
 
-Below is the design and data analysis pipeline for my auditory working memory experiment (also see /Auditory Working Memory)
+Below is the design and data analysis pipeline for my auditory working memory experiment (also see /Auditory Working Memory).
+
+
 
 
 
