@@ -81,7 +81,7 @@
 
 0. new a folder for each subject entitled "name+number", e.g `crq1`, and copy the .mat file of this subject generated in the experiment to this folder, then load the data into EEGLAB and select channel location (select the second option "Use MNI...")
 1. re-reference to average mastoids (TP9 & TP10)
-2. 50Hz notch filter, then filter between 0.3 ~ 50 Hz
+2. filter between 0.3 ~ 50 Hz
 3. run ICA
 4. save the EEGLAB dataset as "name+number+ICA.set", e.g. `crq1ICA.set`
 
