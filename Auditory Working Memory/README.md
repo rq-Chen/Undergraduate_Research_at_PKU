@@ -30,7 +30,6 @@
 
   - correct trials: modifying one tone of S1 by 2/3 semitones but maintaining the contour
   - incorrect trials: modifying one tone of S1 so as to change the contour (currently done by raising the 3rd tone to a pitch 2/3 semitones higher than the 1st, or lowering the 1st to that lower than the 3rd)
-  
 
 
 
@@ -51,7 +50,6 @@
   - REVERSED: requiring subjects to mentally reverse S1 during retention, then compare it with S2
   - TRANSPOSITION: requiring subjects to mentally raise S1 for an octave during retention, then compare it with S2
   - CONTOUR: requiring subjects to mentally change the movement S1 into categories ("up-up" / "up-down" / "down-up" / "down-down") during retention, and that of S2 during reaction, then compare them
-
 - Design:
   - block design
     - 2 blocks for each condition (totally 8 rather than the original 4), latin-square arrangement
@@ -60,50 +58,49 @@
     - totally 108 trials (rather than 216) for each condition
   - 4 * 27 practice trials (without feedback) at the very beginning, with sequences not used in formal experiments, 75% (can be a little lower considering the difficulty) accuracy required
 - 10 practice trials or so before every block
-  
 - Total time estimation:
   - 6.25 * 84 / 60 = 8.75 min/block
   - approximately (8.75 + 2.25) * 8 = 88 min, 20% longer than the original study
 
 
 
-## Data Preprocessing
-
-### Pipeline
-
-- Use EEGLAB default parameters, unless stated otherwise.
-
-- **DON'T CHANGE THE ORDER OF THE FOLLOWING PROCESSES.**
+# Data Preprocessing
 
 
 
-#### Section 1
+## Pipeline
+
+Use EEGLAB default parameters, unless stated otherwise.
+
+**DON'T CHANGE THE ORDER OF THE FOLLOWING PROCESSES.**
+
+
+
+### Section 1
 
 0. new a folder for each subject entitled "name+number", e.g `crq1`, and copy the .mat file of this subject generated in the experiment to this folder, then load the data into EEGLAB and select channel location (select the second option "Use MNI...")
 1. re-reference to average mastoids (TP9 & TP10)
 2. filter between 0.3 ~ 50 Hz
-3. run ICA
-4. save the EEGLAB dataset as "name+number+ICA.set", e.g. `crq1ICA.set`
+3. bad channel (marked during the experiment or by EEGLAB automatic channel rejection) rejection, save the rejected channels' name in `chnRej.txt`
+4. interpolate the rejected channels
+5. run ICA
+6. save the EEGLAB dataset as "name+number+ICA.set", e.g. `crq1ICA.set`
 
 This section can be done automatically using scripts (recommended, since that enables you to run ICA on all subjects over a night, and more importantly prevents mistakes).
 
 
 
-#### Section 2
+### Section 2
 
-5. ICA ocular artifact removal, save the rejected component's landscape and activation profile (shown by EEGLAB) as `cmpRej.fig`
+7. ICA ocular artifact removal, save the rejected component's landscape and activation profile (shown by EEGLAB) as `cmpRej.fig`
 
    <img src = "cmpRejExample.jpg" style = "zoom:30%"/>
 
-6. epoch, -1000 ~ 4000ms locked to S1 onset (**no baseline correction**)
+8. epoch, -1000 ~ 4000ms locked to S1 onset (**no baseline correction**)
 
-7. save the dataset as "name+number+Epoch.set", e.g. `crq1Epoch.set`
+9. save the dataset as "name+number+Epoch.set", e.g. `crq1Epoch.set`
 
-8. visual inspection, reject epochs
-
-9. bad channel (marked during the experiment or by EEGLAB automatic channel rejection) rejection, save the rejected channels' name in `chnRej.txt`
-
-10. interpolate the rejected channels
+10. visual inspection, reject epochs 
 
 11. save the dataset as "name+number.set", e.g. `crq1.set`
 
@@ -111,7 +108,7 @@ This section needs to be done manually.
 
 
 
-#### Section 3
+### Section 3
 
 12. seperate the dataset according to the condition and reaction type
 
@@ -119,20 +116,20 @@ Probably only feasible through scripts, see the chapter below.
 
 
 
-### Data Categorization
+## Data Categorization
 
-#### Input
+### Input
 
 - 在当前目录下，有很多文件夹，命名为“姓名小写缩写+编号”，如：crq1, lyq16
 - 每个文件夹里有EEGLAB预处理处理好的数据，命名为“姓名小写缩写+编号.fdt\set”，如：crq1.fdt, lyq16.set
 - 每个文件夹里还包括实验时生成的试次和反应的信息，命名为“姓名小写缩写+编号.mat”，如：lyq16.mat
 
-#### Output
+### Output
 
 - 在每个被试的文件夹下生成八个mat文件，分别存储了四个条件的正确/错误试次的脑电数据，命名为“姓名小写缩写+编号+条件+反应类型.mat”，其中条件为Simple\Reversed\Transposition\Contour，反应类型为T\F，如：crq1ContourF.mat
 - 文件内容：变量eegdata（nChannels * nTimepoints * nTrials single），脑电数据
 
-#### Method
+### Method
 
 - 使用`load("xxxxx.set", "-mat")`读入一个结构体`EEG`，在EEG.event.bvmknum中记录了这个数据集中所有事件的编号（范围从2到433）
 - 打开eeglab并load dataset后，`EEG.data`存储了脑电数据（nChannels * nTimepoints * nTrials single）
