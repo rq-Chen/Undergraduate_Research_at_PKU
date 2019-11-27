@@ -89,32 +89,29 @@ Use EEGLAB default parameters, unless stated otherwise.
 ### Section 1
 
 0. new a folder for each subject entitled "name+number", e.g `crq1`, and copy the .mat file of this subject generated in the experiment to this folder, then load the data into EEGLAB and select channel location (select the second option "Use MNI...")
-1. re-reference to average mastoids (TP9 & TP10)
-2. filter between 0.3 ~ 50 Hz
-3. bad channel (marked during the experiment) rejection, save the rejected channels' name in `chnRej.txt`
+1. re-reference to average mastoids (TP9 & TP10) and add original reference channel back as FCz
+2. notch at 50Hz, filter between 0.3 ~ 50 Hz
+3. bad channel (marked during the experiment **and by automatic channel rejection**) rejection, save the rejected channels' name in `chnRej.txt`
 4. interpolate the rejected channels
-5. run ICA
-6. save the EEGLAB dataset as "name+number+ICA.set", e.g. `crq1ICA.set`
+5. epoch, -1000 ~ 4000ms locked to S1 onset (**no baseline correction**)
+6. run ICA
+7. save the dataset as "name+number+Epoch.set", e.g. `crq1Epoch.set`
 
-This section can be done automatically using scripts (recommended, since that enables you to run ICA on all subjects over a night, and more importantly prevents mistakes).
+This section can be done automatically using script `Preprocessing.m`.
 
 
 
 ### Section 2
 
-7. ICA ocular artifact removal, save the rejected component's landscape and activation profile (shown by EEGLAB) as `cmpRej.fig`
+8. ICA ocular artifact removal, save the rejected component's landscape and activation profile (shown by EEGLAB) as `cmpRej1.fig`, `cmpRej2.fig`, ... (if found)
 
    <img src = "cmpRejExample.jpg" style = "zoom:30%"/>
 
-8. epoch, -1000 ~ 4000ms locked to S1 onset (**no baseline correction**)
-
-9. save the dataset as "name+number+Epoch.set", e.g. `crq1Epoch.set`
+9. save the dataset
 
 10. visual inspection, reject epochs
 
-11. automatic channel rejection and interpolate the rejected channel (add these rejected channels to `chnRej.txt`)
-
-12. save the dataset as "name+number.set", e.g. `crq1.set`
+11. save the dataset as "name+number.set", e.g. `crq1.set`
 
 This section needs to be done manually.
 
@@ -122,7 +119,7 @@ This section needs to be done manually.
 
 ### Section 3
 
-13. seperate the dataset according to the condition and reaction type
+12. seperate the dataset according to the condition and reaction type
 
 Probably only feasible through scripts, see the chapter below.
 
@@ -155,8 +152,7 @@ Probably only feasible through scripts, see the chapter below.
 
 - re-reference to average mastoids (TP9 & TP10, rather than the original nose reference)
 - artifact rejection by EEGLAB (e.g., dead channels, channel jumps, etc.)
-- 50Hz notched, filtered between 0.3 - 50 Hz
-- select data, -1.002 ~ 7s time locked to S1 onset
+- Filtered between 0.3 - 50 Hz
 - ICA ocular artifact removal
 - epoching, -1000 - 4000ms with respect to S1 onset
 - visual inspection for epoch rejection
