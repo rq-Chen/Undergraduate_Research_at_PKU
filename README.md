@@ -91,7 +91,7 @@ Use EEGLAB default parameters, unless stated otherwise.
 0. new a folder for each subject entitled "name+number", e.g `crq1`, and copy the .mat file of this subject generated in the experiment to this folder, then load the data into EEGLAB and select channel location (select the second option "Use MNI...")
 1. re-reference to average mastoids (TP9 & TP10) and add original reference channel back as FCz
 2. notch at 50Hz, filter between 0.3 ~ 50 Hz
-3. bad channel (marked during the experiment **and by automatic channel rejection**) rejection, save the rejected channels' name in `chnRej.txt`
+3. bad channel (marked during the experiment **and by automatic channel rejection**) rejection, save the rejected channels' name in `chnRej.mat`
 4. interpolate the rejected channels
 5. epoch, -1000 ~ 4000ms locked to S1 onset (**no baseline correction**)
 6. run ICA
@@ -107,9 +107,7 @@ This section can be done automatically using script `Preprocessing.m`.
 
    <img src = "cmpRejExample.jpg" style = "zoom:30%"/>
 
-9. save the dataset
-
-10. visual inspection, reject epochs
+9. visual inspection, reject epochs
 
 11. save the dataset as "name+number.set", e.g. `crq1.set`
 
@@ -119,7 +117,7 @@ This section needs to be done manually.
 
 ### Section 3
 
-12. seperate the dataset according to the condition and reaction type
+11. seperate the dataset according to the condition and reaction type
 
 Probably only feasible through scripts, see the chapter below.
 

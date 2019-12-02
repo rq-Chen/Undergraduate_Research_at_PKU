@@ -10,6 +10,7 @@ clear;clc;close;
 %% Parameters
 
 DFPATH = '../';
+SVPATH = '../../analysis/';
 NBLOCKS = 8;
 NTRIALS = 54;
 latincondition = [1 3 2 4 2 1 4 3 1 3 2 4 2 1 4 3];
@@ -40,14 +41,18 @@ for i = 1:length(Folders)
     % load mat and set data
     load([DFPATH currFolder '/' currFolder '.mat'], 'RT', 'Subinfo', ...
         'TrialType', 'ResponseType');
+    
+    % Originally these variables are all NBLOCKS * NTRIALS double matrices.
+    %   Therefore, we need to transpose and then flatten them to get a
+    %   vector, so that the order will be preserved.
     allHit = (TrialType == ResponseType)';
     allRT = RT';
     iBlock = mod(str2num(Subinfo{2}) - 1, 8) + 1;  % beginning block
     blockType = latincondition(iBlock : iBlock + NBLOCKS - 1);
-    for j = 1:NBLOCKS  % change TrialType into condition label
+    for j = 1:NBLOCKS  % change variable TrialType into condition label
         TrialType(j, :) = blockType(j);
     end
-    TrialType = TrialType';
+    TrialType = TrialType';  % transpose these matrices (then flatten)
     
     load([DFPATH currFolder '/' currFolder '.set'], 'EEG', '-mat');
     epochInd = [EEG.epoch.eventbvmknum] - 1;  % range: 1 to 432
@@ -72,13 +77,15 @@ for i = 1:length(Folders)
         RT = blockRT(blockHit);
         eegdata = blockData(:,:,blockHit);
         fileName = [currFolder CONDITIONS{cond} 'T.mat'];
-        save([DFPATH currFolder '/' fileName], 'RT', 'eegdata');
+        mkdir([SVPATH currFolder '/']);
+        save([SVPATH currFolder '/' fileName], 'RT', 'eegdata');
         
         % incorrect trials
         RT = blockRT(~blockHit);
         eegdata = blockData(:,:,~blockHit);
         fileName = [currFolder CONDITIONS{cond} 'F.mat'];
-        save([DFPATH currFolder '/' fileName], 'RT', 'eegdata');        
+        mkdir([SVPATH currFolder '/']);
+        save([SVPATH currFolder '/' fileName], 'RT', 'eegdata');        
         
     end
     
