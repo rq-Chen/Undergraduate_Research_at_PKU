@@ -10,17 +10,17 @@
 
   - Accuracy
 
-    <img src = 'accuracy.png' style = "zoom:60%" />
+    <img src = 'accuracy.png' style = "zoom:40%" />
 
   - Reaction time:
 
-    <img src = 'reaction time.png' style = "zoom:60%" />
+    <img src = 'reaction time.png' style = "zoom:40%" />
 
   - ERP:
 
-    <img src = 'CzERP.png' style = "zoom:60%" />
+    <img src = 'CzERP.png' style = "zoom:40%" />
 
   - time-frequency analysis:
 
-    <img src = 'O1.png' style = "zoom:60%" />
+    <img src = 'O1.png' style = "zoom:40%" />
 
