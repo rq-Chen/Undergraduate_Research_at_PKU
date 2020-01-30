@@ -1,3 +1,17 @@
+For visitors:
+
+
+
+See `Guidance.pdf` for the design of the experiment.
+
+
+
+---
+
+For colleagues:
+
+
+
 ### Arguments that you may need to change:
 
 For the left room

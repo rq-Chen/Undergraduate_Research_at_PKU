@@ -20,10 +20,9 @@
 %   - re-refernce to average of TP9/TP10 and insert FCz back
 %   - 50Hz notched
 %   - 0.3~50Hz filtered
-%   - get pre-defined bad channels
-%   - automatic channel rejection (exclude VEOG)
+%   - reject and interpolate pre-defined bad channels
+%   - automatic channel rejection (exclude VEOG) and interpolate back
 %   - merge and record the rejected and pre-defined bad channels
-%   - interpolate these channels
 %   - epoch, -1~4s locked to all events
 %   - ica by binica.m
 %   - save data
@@ -66,7 +65,7 @@ for i = 1:length(Folders)
         
         % for debugging only
         if strcmp(MODE, 'debug')
-            if strcmp(currSub, 'lyq16') == 0
+            if strcmp(currSub, 'xlj2') == 0
                 continue;
             end
         end
@@ -99,12 +98,15 @@ for i = 1:length(Folders)
     EEG = eeg_checkset( EEG );
 
     % check whether bad channels are marked
-    % and change them into numbers
+    % reject and interpolate them
     badChannels = [];
     subRejNum = 0;
+    oldChanlocs = EEG.chanlocs;
     chnLabel = {EEG.chanlocs.labels};
     for j = 1:size(chnRej, 1)
         if strcmp(chnRej{j, 1}, currSub)
+            
+            % register the bad channels
             subRejNum = j;
             for currChn = chnRej{j, 2}
                 for currInd = 1:length(chnLabel)
@@ -114,12 +116,20 @@ for i = 1:length(Folders)
                     end
                 end
             end
+            
+            % reject marked bad channels
+            EEG = pop_select( EEG, 'nochannel',chnRej{j, 2});
+            EEG = eeg_checkset( EEG );
+            % and interpolate back (chnLabel will be maintained)
+            EEG = pop_interp(EEG, oldChanlocs, 'spherical');
+            EEG = eeg_checkset( EEG );
+             
             break
         end
     end
     
     % automatic channel rejection (default setting)
-    oldChanlocs = EEG.chanlocs;
+    
     for currInd = 1:length(chnLabel)  % exclude VEOG
         if strcmp('VEOG', chnLabel{currInd})
             veogInd = currInd;
@@ -134,13 +144,17 @@ for i = 1:length(Folders)
         end
     end
     
+    % remove bad channels except VEOG
     [EEG, indelec] = pop_rejchan(EEG, 'elec', elecRange,...
         'threshold',5,'norm','on','measure','kurt');
-    % remove bad channels except VEOG
     EEG = eeg_checkset( EEG );
-    indelec = elecRange(indelec);  % Important! Get correct indices.
     
-    % record the rejected channels
+    % interpolate the removed channels
+    EEG = pop_interp(EEG, oldChanlocs, 'spherical');
+    EEG = eeg_checkset( EEG );
+    
+    % record the rejected channels    
+    indelec = elecRange(indelec);  % Important! Get correct indices.
     badChannels = union(badChannels, indelec)';  % column vector 
     if ~isempty(badChannels)
         badChnLabel = chnLabel(badChannels)';
@@ -151,18 +165,16 @@ for i = 1:length(Folders)
         end
     end
     
-    % interpolate the removed channels
-    EEG = pop_interp(EEG, oldChanlocs, 'spherical');
-    EEG = eeg_checkset( EEG );
-    
     % epoch, -1~4
     EEG = pop_epoch( EEG, {  }, [-1  4], 'newname', [currSub 'Epoch'],...
         'epochinfo', 'yes');
     EEG = eeg_checkset( EEG );
     
     % ica
-    EEG = pop_runica(EEG, 'icatype', 'binica', 'extended',1);
-    EEG = eeg_checkset( EEG );
+    if strcmp(MODE, 'debug') == 0
+        EEG = pop_runica(EEG, 'icatype', 'binica', 'extended',1);
+        EEG = eeg_checkset( EEG );
+    end
     
     % save data
     if strcmp(MODE, 'debug') == 0
