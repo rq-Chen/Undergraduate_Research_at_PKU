@@ -8,4 +8,4 @@
 ## Reviews I've written
 - A review about the representation of time and order in visual working memory: **时序信息在工作记忆中的表征.pdf**
 
-- A review for the computational models and functions of neural oscillation in working memory: **Review_Neural_Oscillation_Attention_Working_Memory.pdf**
+- A review for the computational models and functions of neural oscillation in attention and working memory: **Review_Neural_Oscillation_Attention_Working_Memory.pdf**
