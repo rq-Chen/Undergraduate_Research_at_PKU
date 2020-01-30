@@ -6,7 +6,7 @@
 
 - Data analysis: see `./analysis/`.
 
-- Primary result (still working on it):
+- Preliminary result (still working on it):
 
   - Accuracy
 
