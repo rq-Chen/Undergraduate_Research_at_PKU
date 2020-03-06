@@ -1,4 +1,4 @@
-%% groupDat.m - Group the data by condition and response
+%% GroupDat.m - Group the data by condition and response
 %
 % Ruiqi Chen, 11/21/2019
 %
@@ -10,7 +10,7 @@ clear;clc;close;
 %% Parameters
 
 DFPATH = '../';
-SVPATH = '../../analysis/';
+SVPATH = '../analysis/';
 NBLOCKS = 8;
 NTRIALS = 54;
 latincondition = [1 3 2 4 2 1 4 3 1 3 2 4 2 1 4 3];

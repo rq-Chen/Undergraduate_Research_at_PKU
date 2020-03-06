@@ -6,21 +6,5 @@
 
 - Data analysis: see `./analysis/`.
 
-- Preliminary result (still working on it):
-
-  - Accuracy
-
-    <img src = 'accuracy.png' style = "zoom:40%" />
-
-  - Reaction time:
-
-    <img src = 'reaction time.png' style = "zoom:40%" />
-
-  - ERP:
-
-    <img src = 'CzERP.png' style = "zoom:40%" />
-
-  - time-frequency analysis:
-
-    <img src = 'O1.png' style = "zoom:40%" />
+- Preliminary result (still working on it): See https://rq-chen.github.io/undergraduate-research-PKU/.
 

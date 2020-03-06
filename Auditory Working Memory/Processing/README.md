@@ -1,64 +1,58 @@
-# Data Preprocessing
-
-
+# Preprocessing
 
 ## Pipeline
 
-Use EEGLAB default parameters, unless stated otherwise.
+The first part is done by `Preprocessing.m`:
 
-**DON'T CHANGE THE ORDER OF THE FOLLOWING PROCESSES.**
+- Load data
+- Select channel location
+- Add FCz as reference
+- Delete VEOG
+- Re-refernce to average of all channels and insert FCz back
+- Notch at 50Hz
+- Filter between 0.15~30Hz
+- Reject and interpolate pre-defined bad channels in `chnRej.mat`
+- Epoch, -4~6s locked to all events
+- Reject pre-defined bad trials in `xxRef.set`
+- ICA with `binica.m`
+- Save dataset as `NAME+NUMBER+'epoch'.set`, e.g. `crq1epoch.set`
+- Clear the files created by `binica.m`
 
+The bad channels were defined in `ArtifactPrepro.m`, and trials rejection is performed on a subset of the data with shorter baseline (actually we extracted such a long baseline merely to avoid the boundary effect in time-frequency decomposition). The process is described In the next section.
 
+After that:
 
-### Section 1
+- Visually inspected the ICs and remove those clearly related to oculomotor artifacts
+- Save the new set as `NAME+NUMBER.set`, e.g. `crq1.set` (`crq1` is myself; we will change these names before publishing our result)
+- Collected data to `.mat` files by conditions, responses and subjects through `GroupDat.m`, e.g. `crq1/SimpleT.mat`
 
-0. new a folder for each subject entitled "name+number", e.g `crq1`, and copy the .mat file of this subject generated in the experiment to this folder, then load the data into EEGLAB and select channel location (select the second option "Use MNI...")
-1. re-reference to average mastoids (TP9 & TP10) and add original reference channel back as FCz
-2. notch at 50Hz, filter between 0.3 ~ 50 Hz
-3. bad channel (marked during the experiment **and by automatic channel rejection**) rejection, save the rejected channels' name in `chnRej.mat`
-4. interpolate the rejected channels
-5. epoch, -1000 ~ 4000ms locked to S1 onset (**no baseline correction**)
-6. run ICA
-7. save the dataset as "name+number+Epoch.set", e.g. `crq1Epoch.set`
+## Artifact Rejection
 
-This section can be done automatically using script `Preprocessing.m`.
+As mentioned before, we extracted a shorter epoch to reject the artifacts. This process is done by `artifactPrepro.m` and visual inspection.
 
-### Section 2
+The first part is exactly the same as in `Preprocessing.m`:
 
-8. ICA ocular artifact removal, save the rejected component's landscape and activation profile (shown by EEGLAB) as `cmpRej1.fig`, `cmpRej2.fig`, ... (if found)
+- Load data
+- Select channel location
+- Add FCz as reference
+- Delete VEOG
+- Re-refernce to average of all channels and insert FCz back
+- Notch at 50Hz
+- Filter between 0.15~30Hz
 
-   <img src = "cmpRejExample.jpg" style = "zoom:30%"/>
+Then we defined bad channels:
 
-9. visual inspection, reject epochs
+- Reject and interpolate the bad channels recorded down during experiment
+- Automatic channel rejection and interpolate back
+- Merge and record the rejected and pre-defined bad channels in `chnRej.mat`
 
-11. save the dataset as "name+number.set", e.g. `crq1.set`
+Then we extract a subset of the data for epoch rejection:
 
-This section needs to be done manually.
+- Epoch, -1~6s locked to all events
+- ICA with `binica.m`
+- Save dataset as `NAME+NUMBER+'epochRef'.set`, e.g. `crq1epochRef.set`.
+- Clear the files created by `binica.m`
 
-### Section 3
+Note that we performed the same preprocessing and rejected the same channels in `Preprocessing.m` and `ArtifactPrepro.m`, and the only difference is that the latter used a shorter epoch (and different ICs). We then performed a series of check to define bad trials:
 
-11. seperate the dataset according to the condition and reaction type by `groupDat.m`.
-
-
-
-## Data Processing Pipeline in the Original Paper
-
-### EEG Preprocessing
-
-- re-reference to average mastoids (TP9 & TP10, rather than the original nose reference)
-- artifact rejection by EEGLAB (e.g., dead channels, channel jumps, etc.)
-- Filtered between 0.3 - 50 Hz
-- ICA ocular artifact removal
-- epoching, -1000 - 4000ms with respect to S1 onset
-- visual inspection for epoch rejection
-- automatic trial rejection (range of values within a trial at any electrodes > 200uV)
-
-### Event-Related Response Analysis
-
-- averaged seperately for SIMPLE, REVERSED correct, REVERSED incorrect and so on, with equal number of trials (random selected)
-- 100ms (before onset of S1) baseline correction
-- Statistics test:
-  - 250ms binned (totally 8 during retention period), computing the absolute value of the mean
-  - cluster-level paired t-test (by FieldTrip) on EEG topologies for each time window, multiple comparison corrected
-- ROI defined by overlapping area of the main effects of REVERSED versus SIMPLE, or REVERSED correct vs incorrect, etc.
-
+First, we inspected and rejected the bad epochs (**not** because of blinking) with EEGLAB trial rejection function. The threshold analysis was limit to -200ms (baseline) to 3500ms (offset of S2) while the trend analysis was performed on the entire epoch (-1000ms to 5998ms). R-square limit for trend analysis was 0.3. Then we remove the oculomotor ICs and clipped the data to -1~4s. After that, we visually inspected for remaining artifacts (mainly noise in frontal channels) and saved the processed dataset as something like `crq1Ref.set`.

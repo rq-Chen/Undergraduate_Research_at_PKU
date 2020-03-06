@@ -9,17 +9,14 @@ clear;clc;close all;
 
 %% Parameters
 
-DFPATH = '../../processing/';
-CHNFILE = '../chanlocs.mat';
-fs = 500;
-nTime = 2500;
+DFPATH = '../../';
 nBlock = 8;
-nSub = 11;
-BSLTIME = 0.2;
+nSub = 8;
 latincondition = [1 3 2 4 2 1 4 3 1 3 2 4 2 1 4 3];    % latin square
 
 % conditions name
 CONDITIONS = {'Simple', 'Reversed', 'Transposition', 'Contour'};
+nCond = length(CONDITIONS);
 
 
 %% Get folders
@@ -32,12 +29,6 @@ Folders = Folders(3:end);  % skip .\ and ..\
 
 
 %% Computation
-
-% Get channel index
-load(CHNFILE, 'chanlocs');
-nChan = size(chanlocs, 2);
-nCond = length(CONDITIONS);
-allTime = (0:nTime - 1) / fs - 1;
 
 % accuracy and RT
 allACC = nan(nCond, nSub);
@@ -80,11 +71,10 @@ bar(mean(allACC, 2));
 hold on;
 errorbar(mean(allACC, 2), std(allACC, 0, 2) / sqrt(nSub), '.');
 xticklabels(CONDITIONS);
-title(sprintf("Accuracy (n = %d, p-value corrected)", nSub))
-sigline([1,2],1,'**')
+title(sprintf("Accuracy (n = %d, p-value corrected by Tukey's hsd)", nSub))
+sigline([1,2],1,'n.s.')
 sigline([3,4],1)
-sigline([1,3],gca)
-sigline([2,4],gca,'**')
+sigline([2,4],gca)
 
 % RT (some missing because of 100% accuracy)
 figure;
@@ -98,8 +88,8 @@ errorbar(tmp,squeeze(mean(allRT(:,2,:), 3, 'omitnan')),...
     squeeze(std(allRT(:,2,:), 0, 3, 'omitnan')) / sqrt(nSub), '.k');
 xticks(1:4);
 xticklabels(CONDITIONS);
-sigline([3,4],gca,'**')
-sigline([1,4],gca,'**')
+sigline([3,4],gca,'*', 'p = 0.05')
+sigline([1,4],gca,'*', 'p = 0.06')
 title("Reaction time (main effect of response: p<0.01)");
 legend({'Correct', 'Incorrect'});
 

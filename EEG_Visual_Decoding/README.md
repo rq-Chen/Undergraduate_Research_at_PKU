@@ -1,4 +1,4 @@
-# EEG Data Processing Practice
+# EEG Visual Decoding
 
 In March 2019, I implemented a **inverted decoding model** (Brouwer & Heeger, 2009) based on the EEG data collected from a visual working memory task (conducted by Qiaoli Huang, gruduate student in Huan's Lab). I successfully decoded the orientation of the stimuli and replicated Huang's result.
 

@@ -22,7 +22,7 @@ plot(xs,[1;1]*y*1.1,'-k', 'LineWidth',1.5);%line
 text(mean(xs), y*1.11, nt, 'HorizontalAlignment', 'center',...
     'FontSize', 16);% the sig star sign
 if lbl
-    text(mean(xs)*1.1, y*1.18, lbl)% the sig star sign
+    text(mean(xs)*1.05, y*1.15, lbl)% the label
 end
 plot([1;1]*xs(1),[y*1.05,y*1.1],'-k', 'LineWidth',1.5);%left edge drop
 plot([1;1]*xs(2),[y*1.05,y*1.1],'-k', 'LineWidth',1.5);%right edge drop
