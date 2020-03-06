@@ -1,8 +1,8 @@
 # Undergraduate Research at PKU
 
-- Auditory Working Memory: the task design and analyzing method (and codes) for the first experiment in my independent research project.
-- EEG_data_processing_practice: My very first experience with cognitive neuroscience research.
-- Reading: Some books and articles I've read through the process (not frequently updated) and the reviews I've written.
+- `Auditory Working Memory`: the task design and analyzing method (and codes) for the first experiment in my independent research project.
+- `EEG_Visual_Decoding`: My very first experience with cognitive neuroscience research.
+- `Reading`: Some books and articles I've read through the process (not frequently updated) and the reviews I've written.
 
 Below is the design and data analysis pipeline for my auditory working memory experiment (see /Auditory Working Memory).
 
@@ -74,94 +74,86 @@ Below is the design and data analysis pipeline for my auditory working memory ex
 
 
 
-# Data Preprocessing
+## Preprocessing
+
+### Pipeline
+
+The first part is done by `Preprocessing.m`:
+
+- Load data
+- Select channel location
+- Add FCz as reference
+- Delete VEOG
+- Re-refernce to average of all channels and insert FCz back
+- Notch at 50Hz
+- Filter between 0.15~30Hz
+- Reject and interpolate pre-defined bad channels in `chnRej.mat`
+- Epoch, -4~6s locked to all events
+- Reject pre-defined bad trials in `xxRef.set`
+- ICA with `binica.m`
+- Save dataset as `NAME+NUMBER+'epoch'.set`, e.g. `crq1epoch.set`
+- Clear the files created by `binica.m`
+
+The bad channels were defined in `ArtifactPrepro.m`, and trials rejection is performed on a subset of the data with shorter baseline (actually we extracted such a long baseline merely to avoid the boundary effect in time-frequency decomposition). The process is described In the next section.
+
+After that:
+
+- Visually inspected the ICs and remove those clearly related to oculomotor artifacts
+- Save the new set as `NAME+NUMBER.set`, e.g. `crq1.set` (`crq1` is myself; we will change these names before publishing our result)
+- Collected data to `.mat` files by conditions, responses and subjects through `GroupDat.m`, e.g. `crq1/SimpleT.mat`
+
+### Artifact Rejection
+
+As mentioned before, we extracted a shorter epoch to reject the artifacts. This process is done by `artifactPrepro.m` and visual inspection.
+
+The first part is exactly the same as in `Preprocessing.m`:
+
+- Load data
+- Select channel location
+- Add FCz as reference
+- Delete VEOG
+- Re-refernce to average of all channels and insert FCz back
+- Notch at 50Hz
+- Filter between 0.15~30Hz
+
+Then we defined bad channels:
+
+- Reject and interpolate the bad channels recorded down during experiment
+- Automatic channel rejection and interpolate back
+- Merge and record the rejected and pre-defined bad channels in `chnRej.mat`
+
+Then we extract a subset of the data for epoch rejection:
+
+- Epoch, -1~6s locked to all events
+- ICA with `binica.m`
+- Save dataset as `NAME+NUMBER+'epochRef'.set`, e.g. `crq1epochRef.set`.
+- Clear the files created by `binica.m`
+
+Note that we performed the same preprocessing and rejected the same channels in `Preprocessing.m` and `ArtifactPrepro.m`, and the only difference is that the latter used a shorter epoch (and different ICs). We then performed a series of check to define bad trials:
+
+First, we inspected and rejected the bad epochs (**not** because of blinking) with EEGLAB trial rejection function. The threshold analysis was limit to -200ms (baseline) to 3500ms (offset of S2) while the trend analysis was performed on the entire epoch (-1000ms to 5998ms). R-square limit for trend analysis was 0.3. Then we remove the oculomotor ICs and clipped the data to -1~4s. After that, we visually inspected for remaining artifacts (mainly noise in frontal channels) and saved the processed dataset as something like `crq1Ref.set`.
 
 
 
-## Pipeline
+## ERP Analysis
 
-Use EEGLAB default parameters, unless stated otherwise.
+We converted data to Fieldtrip structure with averaging and baseline correction by `prepare_ft.m` with `DATATYPE = 'ERP'`.
 
-**DON'T CHANGE THE ORDER OF THE FOLLOWING PROCESSES.**
+- Averaged within each subject for each condition and correct/incorrect response
+- Baseline corrected by subtracting the mean amplitude between -0.2~0s
+- Converted to Fieldtrip structure by function `mat2ft.m`
 
-
-
-### Section 1
-
-0. new a folder for each subject entitled "name+number", e.g `crq1`, and copy the .mat file of this subject generated in the experiment to this folder, then load the data into EEGLAB and select channel location (select the second option "Use MNI...")
-1. re-reference to average mastoids (TP9 & TP10) and add original reference channel back as FCz
-2. notch at 50Hz, filter between 0.3 ~ 50 Hz
-3. bad channel (marked during the experiment **and by automatic channel rejection**) rejection, save the rejected channels' name in `chnRej.mat`
-4. interpolate the rejected channels
-5. epoch, -1000 ~ 4000ms locked to S1 onset (**no baseline correction**)
-6. run ICA
-7. save the dataset as "name+number+Epoch.set", e.g. `crq1Epoch.set`
-
-This section can be done automatically using script `Preprocessing.m`.
+Then we performed statistical analysis in `ERPstat.m`.
 
 
 
-### Section 2
+## Wavelet Analysis
 
-8. ICA ocular artifact removal, save the rejected component's landscape and activation profile (shown by EEGLAB) as `cmpRej1.fig`, `cmpRej2.fig`, ... (if found)
+We converted data to Fieldtrip structure with averaging and baseline correction by `prepare_ft.m` with `DATATYPE = 'TF'`.
 
-   <img src = "cmpRejExample.jpg" style = "zoom:30%"/>
+- Converted to Fieldtrip structure by function `mat2ft.m`
+- Performed wavelet transform by `ft_freqanalysis`. Frequencies are `2:30Hz`, time centers are `-1:0.01:4s` and the variance in frequency domain is set by $$f_0 / \sigma_f = 7$$.
+- Averaged within each subject for each condition and correct/incorrect response
+- Baseline corrected by zscoring against the power for each frequency bin between -1~0s
 
-9. visual inspection, reject epochs
-
-11. save the dataset as "name+number.set", e.g. `crq1.set`
-
-This section needs to be done manually.
-
-
-
-### Section 3
-
-11. seperate the dataset according to the condition and reaction type
-
-Probably only feasible through scripts, see the chapter below.
-
-
-
-## Data Categorization
-
-### Input
-
-- 在当前目录下，有很多文件夹，命名为“姓名小写缩写+编号”，如：crq1, lyq16
-- 每个文件夹里有EEGLAB预处理处理好的数据，命名为“姓名小写缩写+编号.fdt\set”，如：crq1.fdt, lyq16.set
-- 每个文件夹里还包括实验时生成的试次和反应的信息，命名为“姓名小写缩写+编号.mat”，如：lyq16.mat
-
-### Output
-
-- 在每个被试的文件夹下生成八个mat文件，分别存储了四个条件的正确/错误试次的脑电数据，命名为“姓名小写缩写+编号+条件+反应类型.mat”，其中条件为Simple\Reversed\Transposition\Contour，反应类型为T\F，如：crq1ContourF.mat
-- 文件内容：变量eegdata（nChannels * nTimepoints * nTrials single），脑电数据
-
-### Method
-
-- 使用`load("xxxxx.set", "-mat")`读入一个结构体`EEG`，在EEG.event.bvmknum中记录了这个数据集中所有事件的编号（范围从2到433）
-- 打开eeglab并load dataset后，`EEG.data`存储了脑电数据（nChannels * nTimepoints * nTrials single）
-- load dataset可以用eeglab自动生成的代码实现（手工操作一次后自动生成）
-
-
-
-## Data Processing Pipeline in the Original Paper
-
-### EEG Preprocessing
-
-- re-reference to average mastoids (TP9 & TP10, rather than the original nose reference)
-- artifact rejection by EEGLAB (e.g., dead channels, channel jumps, etc.)
-- Filtered between 0.3 - 50 Hz
-- ICA ocular artifact removal
-- epoching, -1000 - 4000ms with respect to S1 onset
-- visual inspection for epoch rejection
-- automatic trial rejection (range of values within a trial at any electrodes > 200uV)
-
-### Event-Related Response Analysis
-
-- averaged seperately for SIMPLE, REVERSED correct, REVERSED incorrect and so on, with equal number of trials (random selected)
-- 100ms (before onset of S1) baseline correction
-- Statistics test:
-  - 250ms binned (totally 8 during retention period), computing the absolute value of the mean
-  - cluster-level paired t-test (by FieldTrip) on EEG topologies for each time window, multiple comparison corrected
-- ROI defined by overlapping area of the main effects of REVERSED versus SIMPLE, or REVERSED correct vs incorrect, etc.
-
+Then we performed statistical analysis in `TFstat.m`.
