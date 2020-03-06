@@ -6,5 +6,5 @@
 
 - Data analysis: see `./analysis/`.
 
-- Preliminary result (still working on it): See https://rq-chen.github.io/undergraduate-research-PKU/.
+- Preliminary result (still working on it): See https://rq-chen.github.io/undergraduate-research/.
 
