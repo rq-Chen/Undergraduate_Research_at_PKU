@@ -24,3 +24,14 @@ We converted data to Fieldtrip structure with averaging and baseline correction 
 - Baseline corrected by zscoring against the power for each frequency bin between -1~0s
 
 Then we performed statistical analysis in `TFstat.m`.
+
+
+
+## Decoding Analysis
+
+We tried several decoding method:
+
+- Representation Similarity Analysis based on cosine or Euclidean distance in `cosRSA.m`
+- Decoding analysis for the contour of S1 using LSTM network in `tgRDM.m`
+- Decoding analysis for task type using LSTM in `lstmClfTask.m`
+
