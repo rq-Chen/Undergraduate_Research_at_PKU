@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Visualizing the NSFC Funding</title>
+        <link rel="stylesheet" type="text/css" href="css/theme.css"/>
+        <link rel="stylesheet" type="text/css" href="css/visualization.css"/>
+    </head>
+</html>
+
+<body id = "write" class="typora-export">
+    <!--specify this id and class to suit the theme-->
+    <div>
+        <center>
+            <span style = "float: left">
+    	<a href = "https://rq-chen.github.io/index.html">Before: None</a>
+            </span>
+        	<a href = "https://rq-chen.github.io/index.html">Homepage</a>
+            <span style = "float: right">
+                    <a href = "https://rq-chen.github.io/deep-learning-startup/index.html">Next: Deep learning startup</a>
+            </span>
+        </center>
+    </div>
+    <h1>
+        Visualization of NSFC Funding 2018
+    </h1>
+    <div id = "subTitle">  <!--this part should be modified using css-->
+        <p>&nbsp;</p>
+        <p><h5 style = "text-align: center;">Ruiqi Chen</h5></p>
+        <p>&nbsp;</p>
+    </div>
+    <h2>Introduction</h2>
+
+    <!--Unfortunately, due to the js-beautify extension in vscode, this html file 
+      will preserver all the tabs and spaces in <p></p>, so we can only write
+      it in this ugly style-->
+    <p>The <em>National Natural Science Foundation of China</em> (NSFC) is an organization directly affiliated to the State Council for the management of the <em>National Natural Science Fund</em>. Therefore, visualizing the funding allocation may help us gain insight into the national strategy on science and technology development, as well as the unbalance in higher education and regional development. In this web page, we illustrate the funding allocation in year 2018.</p>
+    <p>The data is downloaded from <a href='http://www.nsfc.gov.cn/nsfc/cen/xmtj/pdf/2018_table.pdf'>the offcial site of NSFC</a>.</p>
+    <p>See my intuition for the visualization analysis (in Chinese) <a href='Idea.html'>here</a>.</p>
+    <h2>Across the Academic Departments</h2>
+    <p>The figure below illustrates the allocation of the funding across different academic departments (each represented by a vertical stacked &quot;bar&quot;) and disciplines (each represented by a horizontal stacked bar). </p>
+    <ul>
+        <li>For each department, the number at the top indicates the total amount of money (in units of 100 million RMB yuan) that is applied for, while the horizontal grey line indicates the allocated part.</li>  
+    </ul>
+
+    <ul>
+        <li>For each discipline, two stacked bar chart (on the left and right side of a black vertical line) indicates the amount of money and project that is applied for, respectively. Likewise, the area in deep color represents the allocated part. Move the mouse over the bars to inspect the details.</li>    
+    </ul>
+    <div class = "figBox">
+        <svg id = "DisPlot" class = "svgFig">
+            <!--d3 plots here-->
+        </svg>
+    </div>
+    
+    <h2>Across the Academic Institutes</h2>
+    <p>The figure below illustrates the allocation of the funding across different academic institutes (each represented by a circle).</p>
+    <ul>
+        <li>The x-value of a circle represents the total amount of funding (in units of 1 million RMB yuan, same below) received by an institute in the field of <em>Mathematics and Physics, Chemistry, Biology, Medicine, and Earth Science</em>.</li>
+        <li>The y-value represents the total amount of funding received in the field of <em>Engineering and Material Science, Information Science, and Management</em>.</li>
+        <li>The radius of a circle represents the total amount of projects accepted. Move the mouse over the bars to inspect the details.</li>
+    </ul>
+    <div class = "figBox">
+        <svg id = "InsPlot" class = "svgFig">
+            <!--d3 plots here-->
+        </svg>
+    </div>
+    
+    <h2>Across Different Region</h2>
+    <p>The parallel coordinate plot below illustrates the funding received in different regions of mainland China. By default, the y-axes are scaled by square root.</p>
+    <p><strong>This figure is interactive:</strong></p>
+    <ul>
+        <li>Click on a path to select a region and inspect its details.</li>
+        <li>You can select multiple regions to compare.</li>
+        <li>Click on the paths again to resume the original figure.</li>
+    </ul>
+    <div class = "figBox">
+        <svg id = "ProPlot" class = "svgFig">
+            <!--d3 plots here-->
+        </svg>
+    </div>    
+</body>
+
+<script src = "js/jquery-3.2.1.min.js"></script>
+<script src = "js/d3.min.js" ></script>
+<script src = "js/nsfcFund.js" ></script>

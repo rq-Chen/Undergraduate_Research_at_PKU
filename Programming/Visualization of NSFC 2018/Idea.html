@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Visualizaing the NSFC Funding</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --window-border: none; --typora-center-window-title: true; --active-file-bg-color: #f3f3f3; --bg-color: #fcfcfc; --control-text-color: #777; }
+.mac-seamless-mode #typora-sidebar { top: var(--mac-title-bar-height); padding-top: 0px; height: auto; }
+html, body, #write { background: rgb(252, 252, 252); font-family: TeXGyreAdventor, "Century Gothic", "Microsoft YaHei Light", "Yu Gothic", Raleway, STHeiti, sans-serif; font-weight: 300; }
+h1, h2, h3, h4, h5, h6 { color: rgb(17, 17, 17); font-family: TeXGyreAdventor, "Century Gothic", "Microsoft YaHei Light", "Yu Gothic", Ubuntu, STHeiti, sans-serif; }
+html { font-size: 16px; }
+#write { max-width: 914px; text-align: justify; }
+#write > h1:first-child { margin-top: 2.75rem; }
+#write > h2:first-child { margin-top: 1.75rem; }
+#write > h3:first-child { margin-top: 1rem; }
+#write > h4:first-child { margin-top: 0.5rem; }
+h1 { font-weight: normal; line-height: 4rem; margin: 4rem 0px 1.75rem; padding: 20px 30px; text-align: center; text-transform: uppercase; }
+h2 { font-weight: normal; line-height: 3rem; margin: 3rem 0px 1.9375rem; padding: 0px 30px; text-align: center; text-transform: uppercase; }
+h3 { font-weight: normal; }
+h4 { font-weight: normal; }
+h5 { font-size: 1.125rem; font-weight: normal; }
+h6 { font-size: 1rem; font-weight: bold; }
+p { color: rgb(17, 17, 17); font-size: 1rem; line-height: 1.75rem; margin: 0px 0px 1.25rem; }
+#write > h3.md-focus::before { left: -1.875rem; top: 0.5rem; padding: 2px; }
+#write > h4.md-focus::before { left: -1.875rem; top: 0.3125rem; padding: 2px; }
+#write > h5.md-focus::before { left: -1.875rem; top: 0.25rem; padding: 2px; }
+#write > h6.md-focus::before { left: -1.875rem; top: 0.125rem; padding: 2px; }
+@media screen and (max-width: 48em) {
+  blockquote { margin-left: 1rem; margin-right: 0px; padding: 0.5em; }
+  .h1, h1 { font-size: 2.827rem; }
+  .h2, h2 { font-size: 1.999rem; }
+  .h3, h3 { font-size: 1.413rem; }
+  .h4, h4 { font-size: 1.25rem; }
+  .h5, h5 { font-size: 1.15rem; }
+  .h6, h6 { font-size: 1rem; }
+}
+a, .md-def-url { color: rgb(153, 0, 0); text-decoration: none; }
+a:hover { text-decoration: underline; }
+table { margin-bottom: 20px; }
+table th, table td { padding: 8px; line-height: 1.25rem; vertical-align: top; border-top: 1px solid rgb(221, 221, 221); }
+table th { font-weight: bold; }
+table thead th { vertical-align: bottom; }
+table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td { border-top: 0px; }
+table tbody + tbody { border-top: 2px solid rgb(221, 221, 221); }
+code, .md-fences { border: 1px solid rgb(204, 204, 204); padding: 0.1em; font-size: 0.9em; margin-left: 0.2em; margin-right: 0.2em; }
+.md-fences { margin: 0px 0px 20px; font-size: 1em; padding: 0.4em 1em 0.3em; }
+.task-list { padding-left: 0px; }
+.task-list-item { padding-left: 2.125rem; }
+.task-list-item input { top: 3px; }
+.task-list-item input::before { content: ""; display: inline-block; width: 1rem; height: 1rem; vertical-align: middle; text-align: center; border: 1px solid gray; background-color: rgb(253, 253, 253); margin-left: 0px; margin-top: -0.8rem; }
+.task-list-item input:checked::before, .task-list-item input[checked]::before { content: "◼"; font-size: 0.8125rem; line-height: 0.9375rem; margin-top: -1rem; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .task-list-item input::before { margin-top: -0.2rem; }
+  .task-list-item input:checked::before, .task-list-item input[checked]::before { margin-top: -0.2rem; }
+}
+blockquote { margin: 0px 0px 1.11111rem; padding: 0.5rem 1.11111rem 0px 1.05556rem; border-left: 1px solid gray; }
+blockquote, blockquote p { line-height: 1.6; color: rgb(111, 111, 111); }
+#write pre.md-meta-block { min-height: 30px; background: rgb(248, 248, 248); padding: 3em 1.5em 1.5em; font-weight: 300; font-size: 1em; margin-top: -1.5em; color: rgb(153, 153, 153); width: 100vw; max-width: calc(100% + 60px); margin-left: -30px; border-left: 30px solid rgb(248, 248, 248); border-right: 30px solid rgb(248, 248, 248); }
+.MathJax_Display { font-size: 0.9em; margin-top: 0.5em; margin-bottom: 0px; }
+p.mathjax-block, .mathjax-block { padding-bottom: 0px; }
+.mathjax-block > .code-tooltip { bottom: 5px; box-shadow: none; }
+.md-image > .md-meta { padding-left: 0.5em; padding-right: 0.5em; }
+.md-image > img { margin-top: 2px; }
+.md-image > .md-meta:first-of-type::before { padding-left: 4px; }
+#typora-source { color: rgb(85, 85, 85); }
+#md-searchpanel { border-bottom: 1px solid rgb(204, 204, 204); }
+#md-searchpanel .btn { border: 1px solid rgb(204, 204, 204); }
+#md-notification::before { top: 14px; }
+#md-notification { background: rgb(238, 238, 238); }
+.megamenu-menu-panel .btn { border: 1px solid rgb(204, 204, 204); }
+#typora-sidebar { box-shadow: none; }
+.file-list-item, .show-folder-name .file-list-item { padding-top: 20px; padding-bottom: 20px; line-height: 20px; }
+.file-list-item-summary { height: 40px; line-height: 20px; }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name="nsfc资助可视化思路" class="md-header-anchor"></a><span>NSFC资助可视化思路</span></h1><p><span> </span><span>	</span><span>可视化页面：</span><a href='index.html'><span>Visualization of the NSFC Funding 2018</span></a><span>.</span></p><h2><a name="数据分析" class="md-header-anchor"></a><span>数据分析</span></h2><p><span> </span><span>	</span><span>这次选择的三张表格都是高维数据，数据规模中等，都在几十到一百左右，但是属性有十几种。因此，选择需要进行可视化的属性就成了一个关键。选择属性需要考虑两个方面：</span></p><ul><li><span>属性之间是否独立，是否有冗余信息</span></li><li><span>可视化的目标是什么，需要展示哪些信息</span></li></ul><p><span> </span><span>	</span><span>我们不难发现这组数据的一个明显特点：它对于所有的属性都用项目数和拨款金额两个指标进行了计算。显然，在数据间进行比较时，我们不会用一个数据的金额去比另一个数据的项目数。因此，当我们分析的重点放在数据间的比较时，这两个指标完全可以只取其中一个。但是，对于数据内的比较，显然我们可以考虑项目资助率会不会与拨款资助率有明显差异，因此两个维度都可以保留。</span></p><p><span> </span><span>	</span><span>除此以外我们还可以发现，第一张表中明显具有很多冗余信息——各种比例。实际上，我们可以通过两部分的长度或者直方图等等自然看出比例关系来，故没有必要对这些比例单独做可视化。</span></p><p><span> </span><span>	</span><span>关于数据的分析点，显然主要是在数据项之间进行某种比较，揭示它们的差异。比如，我们可以比较不同学科的资助情况，看看哪些学科是国家关注的重点；我们还可以比较不同单位的资助情况，间接反映出各单位的科研能力，以及它们的强势学科；我们还可以比较不同地区的资助情况，看看它们的教育实力，以及与经济发展的关系等等；我们甚至还可以分析项目主要负责人的年龄分布，看看每个学科的科研主力军是哪些年龄段的人。这些维度都是十分有价值的。这里，我们选取了前三种。</span></p><h2><a name="设计宗旨" class="md-header-anchor"></a><span>设计宗旨</span></h2><h4><a name="图一：不同学科的资助情况" class="md-header-anchor"></a><span>图一：不同学科的资助情况</span></h4><p><span> </span><span>	</span><span>这张图中，我们想要比较全面的展示数据表一（2018年面上项目按申请与资助情况统计）的内容。但我们做出了一些合理的取舍：</span></p><ul><li><p><span>关注不同学部间的比较，但只使用金额为指标</span></p><p><span>显然，不同学部间的比较有助于我们发现国家自然科学发展战略的侧重点。只用一个指标的理由上一节已经分析过了。</span></p></li><li><p><span>关注同一学部不同学科间的比较</span></p><p><span>很好理解，理由同上。</span></p></li><li><p><span>关注同一学部或者同一学科的申请情况与资助情况的比较，以及项目数和金额两个指标的比较</span></p><p><span>这里我们关注的其实是资助率。哪些学部（或哪些学科）的资助率高？这显然也代表了国家的战略方向以及科研事业的前景。同时，对于同一个学科，项目资助率和金额资助率也许会有一些不对称性，可以大概观察出科研所需的经费的不同。（不过根据结果看差别不大）</span></p></li><li><p><strong><span>不关注</span></strong><span>不同学部的具体学科的比较</span></p><p><span>这一点比较特别。但我认为这个取舍是应该的。我们可能想要比较化学和地球科学哪个学部能获得更多的拨款，但是比较合成化学和大气科学这两个学科看起来就比较奇怪了；相反，比较大气科学和地质学显然是有道理的。</span></p></li></ul><p><span> </span><span>	</span><span>基于上面这些考虑，第一个很自然的想法就是堆叠柱状图。这样不仅可以比较各个学部的情况，也可以在学部内进行比较。而资助率可以直接用申请总额和资助总额两个柱子的长度之比表示。但是这样的设计仍有问题，因为竖向堆叠的柱子长度终究没有横向对齐的方便比较。于是，我最终采用了一种类似“年龄性别人口分布图”的方式，“年龄”换成各个学科，“性别”换成金额与项目数，并且每个横向的柱子都包括资助和未资助这两个透明度不同的部分；对每个学部都画一个这样的图，其高度与该学部的申请总额成比例（这里借鉴了堆叠图），然后用一条水平线代表资助的总额。这样的设计很好地满足了我的所有需要。</span></p><h4><a name="图二：不同单位的资助情况" class="md-header-anchor"></a><span>图二：不同单位的资助情况</span></h4><p><span> </span><span>	</span><span>实际上，这张表（2018年国家自然科学基金面上项目资助金额超过2000万元的单位）的核心属性与表一是相同的。但是，数据有一百多项，再使用同样的方法显然不合适了。另外很重要的一点是，这张表的数据项不再是分类的，而是顺序的了。我们关注的分析点也由此出发：</span></p><ul><li><span>有没有办法简单明了地表示出各个单位的科研实力（或者科研经费多少）？</span></li><li><span>有没有办法表现一个随时间增长的动态变化过程？</span></li></ul><p><span> </span><span>	</span><span>这里我想起了</span><em><span>“200 years, 200 contries, 4 minutes”</span></em><span>这个设计，因此决定牺牲数据精确值来降维做一个散点图。我选择了自然科学学科（数理化生医和地球科学）的资助总额作为横轴，工程与管理学科的资助总额作为纵轴。为了不冗余，圆的大小换成了另外一个指标（总项目数）。如果把近十年的数据放在一起，我们就能很好地看出各科研院所实力的变化，很遗憾由于时间和编程基础问题没有办法实现这个想法。</span></p><p><span> </span><span>	</span><span>这个设计的缺点也非常明显了，我们抛掉了很多原始数据。另外，圆的颜色这个维度也被我浪费了，实际上本可以用来表示别的属性，比如与地区联系起来。不过，因为我们的重点是比较各个单位，这还是可以容忍的。</span></p><h4><a name="图三：不同地区的资助情况" class="md-header-anchor"></a><span>图三：不同地区的资助情况</span></h4><p><span> </span><span>	</span><span>这里我们可视化的表格（2018年面上项目资助情况（按地区统计））实际上与前面的表格还是类似的，属性相同，而且也是有序的。为了更好利用不同表现形式的长处，这里我们换成了平行坐标方式，这也是因为数据项个数（31）和属性数（9）都恰好比较适合用平行坐标来表示。另外，根据实验发现，线性尺度画出的图会造成北京一枝独秀其他省蜷缩一角的情况，于是我们尝试后换成了平方根尺度。其次，考虑到我们关注的重点是地区差异，极端值显然比中间值更值得关注，因此我们选取了分歧式的颜色谱。</span></p><p><span> </span><span>	</span><span>平行坐标的优缺点都很明显。它全面地展示了所有数据，可以直观地比较任意两个省的任意属性，也可以直观的看出各个省的强项和弱项。但缺点是很容易乱。因此我们设计了交互，允许刷选显示具体数值，这样就保证了呈现的简洁和数据的完整。</span></p><h2><a name="效果分析" class="md-header-anchor"></a><span>效果分析</span></h2><h4><a name="图一：不同学科的资助情况" class="md-header-anchor"></a><span>图一：不同学科的资助情况</span></h4><p><img src='fig1.png' alt='fig1' referrerPolicy='no-referrer' /></p><p><span> </span><span>	</span><span>关于作品描述，在页面中已经包含，这里直接引用如下：</span></p><blockquote><p><span>The figure below illustrates the allocation of the funding across different academic departments (each represented by a vertical stacked &quot;bar&quot;) and disciplines (each represented by a horizontal stacked bar). </span></p><ul><li><span>For each department, the number at the top indicates the total amount of money (in units of 100 million RMB yuan) that is applied for, while the horizontal grey line indicates the allocated part.</span></li><li><span>For each discipline, two stacked bar chart (on the left and right side of a black vertical line) indicates the amount of money and project that is applied for, respectively. Likewise, the area in deep color represents the allocated part. Move the mouse over the bars to inspect the details.</span></li></ul></blockquote><p><span> </span><span>	</span><span>从展示结果我们可以明显看到几点：</span></p><ul><li><span>无论哪个学科，申请资助都是相当的不容易，数理科学相对较好，而医学形势最严峻</span></li><li><span>医学的申请项目数远远多于其他学部</span></li><li><span>生命科学和医学是资助力度最大的学部</span></li></ul><h4><a name="图二：不同单位的资助情况" class="md-header-anchor"></a><span>图二：不同单位的资助情况</span></h4><p><img src='fig2.png' alt='fig2' referrerPolicy='no-referrer' /></p><blockquote><p><span>The figure below illustrates the allocation of the funding across different academic institutes (each represented by a circle).</span></p><ul><li><span>The x-value of a circle represents the total amount of funding (in units of 1 million RMB yuan, same below) received by an institute in the field of </span><em><span>Mathematics and Physics, Chemistry, Biology, Medicine, and Earth Science</span></em><span>.</span></li><li><span>The y-value represents the total amount of funding received in the field of </span><em><span>Engineering and Material Science, Information Science, and Management</span></em><span>.</span></li><li><span>The radius of a circle represents the total amount of projects accepted. Move the mouse over the bars to inspect the details.</span></li></ul></blockquote><p><span> </span><span>	</span><span>我们可以看到，北大清华在这份榜单中竟然处于第二梯队，确实十分有趣。另外也可以明显地感受到，中国大学的科研实力实在差异太大。这里仅仅展示了总资助金额前120位左右的数据，但第一名和最后一名还是能相差几十上百倍，令人唏嘘。</span></p><h4><a name="图三：不同地区的资助情况" class="md-header-anchor"></a><span>图三：不同地区的资助情况</span></h4><p><span> </span><span>	</span><span>这是刷选了几个省份的结果：</span></p><p><img src='fig3.png' alt='fig3' referrerPolicy='no-referrer' /></p><blockquote><p><span>The parallel coordinate plot below illustrates the funding received in different regions of mainland China. By default, the y-axes are scaled by square root.</span></p><p><strong><span>This figure is interactive:</span></strong></p><ul><li><span>Click on a path to select a region and inspect its details.</span></li><li><span>You can select multiple regions to compare.</span></li><li><span>Click on the paths again to resume the original figure.</span></li></ul></blockquote><p><span> </span><span>	</span><span>要注意的是，这里我们采取的是平方根尺度，如果采用线性尺度，省份之间的差异会更加夸张。可以看到，北京一枝独秀，上海、江苏和广东实力也不群。也许这与GDP总额会有着密切的关联。</span></p><h2><a name="感想" class="md-header-anchor"></a><span>感想</span></h2><p><span> </span><span>	</span><span>要过ddl了，感想就私信说吧……</span></p></div>
+</body>
+</html>
