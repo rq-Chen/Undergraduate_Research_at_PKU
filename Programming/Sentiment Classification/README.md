@@ -1,27 +1,29 @@
-# 不同词向量编码与解码器结构在IMDb数据集上的表现分析
-## 解码器比较
+# Word Embedding Strategies & RNN Decoders for Sentiment Classification 
 
-`trainLSTM.py` - 训练LSTM
+## Comparison of Decoders
 
-`trainGRU.py` - 训练GRU
+`trainLSTM.py` - Train LSTM
 
-`trainRNN.py` - 训练SimpleRNN
+`trainGRU.py` - Train GRU
 
-`cmpParam.py` - 比较不同超参数设置
+`trainRNN.py` - Train SimpleRNN
 
-`cmpRNN.py` - 比较三个神经网络分类器的表现
+`cmpParam.py` - Hyperparameter tuning
 
-## 编码器比较
+`cmpRNN.py` - Compare the performance of three decoders
 
-`trainSG.py` - 训练Skip-gram词向量并用LSTM分类
+## Comparison of Encoders
 
-`trainCBOW.py` - 训练CBOW词向量并用LSTM分类
+`trainSG.py` - Train Skip-gram word vectors and classify by LSTM
 
-`cmpEmbed` - 比较不同词向量编码方式的表现
+`trainCBOW.py` - Train CBOW word vectors and classify by LSTM
 
+`cmpEmbed` - Compare the performance of three embedding strategies
 
-## 文件命名
+## File Naming
 
-“LR”“BS”“DO”分别表示学习率、Batch size、Dropout。
+"LR", "BS", "DO" represent learning rate、batch size and dropout repectively.
 
-Compare文件夹下是解码器比较，Embedding文件夹下是编码器比较。
+`/Compare` contains the comparison result for decoders and `/Embedding` for encoders.
+
+`Report.pdf` summarizes the result (in Chinese).

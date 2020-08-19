@@ -2,9 +2,10 @@
 
 - `Auditory Working Memory`: the task design and analyzing method (and codes) for the first experiment in my independent research project.
 - `EEG_Visual_Decoding`: My very first experience with cognitive neuroscience research.
+- `Programming`: My programming projects.
 - `Reading`: Some books and articles I've read through the process (not frequently updated) and the reviews I've written.
 
-Below is the design and data analysis pipeline for my auditory working memory experiment (see /Auditory Working Memory).
+Below is the design and data analysis pipeline for my auditory working memory experiment (see `/Auditory Working Memory`).
 
 
 
